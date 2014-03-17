@@ -1,0 +1,13 @@
+Clone to desktop and begin environment setup
+
+To use SASS, open your terminal and run 
+
+$ gem install compass
+
+Once complete,
+
+$ cd <file directory>
+$ compass watch
+
+Done.
+
