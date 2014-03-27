@@ -1,5 +1,5 @@
 #skillChart{
-    width:60%;
+    width:95%;
     height:350px;
     margin-left:auto;
     margin-right:auto;
@@ -14,11 +14,12 @@
     margin-left:0.2%;
     background-color:red;
     float:left;
-    margin-top:150px;
+    margin-top:350px;
 }
 
 .offcol{
     background-color:blue;
+    margin-right:1.2%;
 }
 
 #skillLabelContainer{
