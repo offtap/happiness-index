@@ -8,13 +8,17 @@
 }
 
 .skillBar {
-    width:8.5%;
+    width:4%;
     height:0px;
-    margin-right:2%;
-    margin-left:2%;
+    margin-right:0.2%;
+    margin-left:0.2%;
     background-color:red;
     float:left;
     margin-top:150px;
+}
+
+.offcol{
+    background-color:blue;
 }
 
 #skillLabelContainer{
