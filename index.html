@@ -15,17 +15,23 @@
         <nav class="top-bar" data-topbar>
           <ul class="title-area">
             <li class="name">
-              <h1><a href="#">Happiness Index</a></h1>
+              <h1><a href="#"></a></h1>
             </li>
             <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
           </ul>
         </nav>
 
         <div class="row">
+            <div class="large-12 columns" id="intro">
+                Search and compare cities and towns, to see what suits your happiness needs.
+            </div>
+        </div>
+
+        <div class="row">
                 <div class="small-6 large-2 columns"id="governmentArea1">
                     <form action='' method='post'>
                             <p><label>Local Government Area:</label><input id = "search" type='text' name='LGA' value='' class='auto'>
-                            <button type="button" onclick="submitter()">Submit</button></p>
+                            <button type="button" id="button" onclick="submitter()">Submit</button></p>
                     </form>
                     <p id = "output"></p>
                 
@@ -68,7 +74,7 @@
             <div class="small-12 large-2 columns" id="governmentArea2">
                 <form action='' method='post'>
                     <p><label>Local Government Area:</label><input id = "search2" type='text' name='LGA' value='' class='auto'>
-                    <button type="button" onclick="submitter2()">Submit2</button></p>
+                    <button type="button" id="button1" onclick="submitter2()">Submit</button></p>
                 </form>
                 <p id = "output"></p>
             </div>

@@ -36,7 +36,8 @@ html, body {
 
 html,
 body {
-  font-size: 100%; }
+  font-size: 100%;
+   }
 
 body {
   background: white;
@@ -50,22 +51,39 @@ body {
   position: relative;
   cursor: default; }
 
+#intro {
+  font-family: "PFDinTextCompProBold",Impact,Arial;
+text-transform: uppercase;
+font-weight: normal;
+color: #000;
+line-height: 0.9;
+margin: 1rem 0;
+text-align: center;
+font-size: 1.5em;
+}
+
 #footer {
   bottom: 0;
   margin-top: 56.3vh;
   background-color: #333333;
   padding-top: 5%;
   text-align: center;
+  font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
 }
 
 #governmentArea2 {
   text-align: right;
   float: right;
   padding-top: 2%;
+  font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
 }
 
 #governmentArea1 {
   padding-top: 2%;
+  font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
 }
 
 
@@ -783,7 +801,7 @@ select {
     margin-right: 0;
     float: left !important; }
 
-  .column.large-uncentered.opposite,
+  .column.large-uncentered.opposi
   .columns.large-uncentered.opposite {
     float: right; }
 
@@ -910,8 +928,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0em;
-    padding-right: 0em;
+    padding-left: 2em;
+    padding-right: 2em;
     float: left; }
 
   .large-1 {
@@ -1629,6 +1647,72 @@ meta.foundation-mq-topbar {
     display: block; }
     .inline-list > li > * {
       display: block; }
+
+#button {
+display: inline-block;
+height: 3.6rem;
+min-width: 8rem;
+padding: 0.8rem 1.5rem;
+border: none;
+border-bottom: 3px solid #c20027;
+background: #f03;
+color: #fff;
+font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
+text-transform: uppercase;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-webkit-appearance: none;
+cursor: pointer;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+}
+
+#button1 {
+display: inline-block;
+height: 3.6rem;
+min-width: 8rem;
+padding: 0.8rem 1.5rem;
+border: none;
+border-bottom: 3px solid #2B505C;
+background: #007095;
+color: #fff;
+font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
+text-transform: uppercase;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-webkit-appearance: none;
+cursor: pointer;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+}
+
+#button {
+display: inline-block;
+height: 3.6rem;
+min-width: 8rem;
+padding: 0.8rem 1.5rem;
+border: none;
+border-bottom: 3px solid #c20027;
+background: #f03;
+color: #fff;
+font-family: "PFDinTextCompProBold",Impact,Arial;
+font-size: 1.35rem;
+text-transform: uppercase;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-webkit-appearance: none;
+cursor: pointer;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+}
 
 button, .button {
   border-style: solid;
