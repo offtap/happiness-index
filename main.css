@@ -1,0 +1,44 @@
+#skillChart{
+    width:60%;
+    height:350px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    margin-top:-20px;
+}
+
+.skillBar {
+    width:8.5%;
+    height:0px;
+    margin-right:2%;
+    margin-left:2%;
+    background-color:red;
+    float:left;
+    margin-top:150px;
+}
+
+#skillLabelContainer{
+    margin-top:20px;
+    width:60%;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:right;
+}
+
+.skillLabel{
+    width:8.5%;
+    height:50px;
+    margin-right:2%;
+    margin-left:2%;
+    color:white;
+    float:left;
+}
+
+.skillLabel p{
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
