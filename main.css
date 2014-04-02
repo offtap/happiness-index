@@ -49,3 +49,19 @@
     -o-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+
+#legend p{
+    margin:0;
+    padding:0;
+    width:50px;
+    float:left;
+}
+
+.red{background:red;}
+.orange{background:orange;}
+.yellow{background:yellow;}
+.pink{background:pink;}
+.purple{background:purple;}
+.blue{background:blue;}
+.green{background:green;}
+

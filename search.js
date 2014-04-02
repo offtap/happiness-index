@@ -15,6 +15,7 @@ $(function() { $("#search2").autocomplete({source: "search.php",minLength: 1});}
 
 //SUBMITTER - call PHP with LGA search string from AUTOCOMPLETE
 function submitter(){
+	findLocation();
 	output.innerHTML = ""; //clear output
 	$.post("db.php", {LGA:document.getElementById("search").value}, function(response){ //call db.php with search string called LGA and resturn a response
 		console.log(response); //debug and testing of JSON return value

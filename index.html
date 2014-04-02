@@ -6,6 +6,13 @@
 
         <link rel="stylesheet" href="main.css" type="text/css"/> 
 
+        <!--MAP LINKS-->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
+        <!--MAP LINK END-->
+
+        <link rel="stylesheet" type="text/css" href="css/multi.css">
+
         <link rel="stylesheet" href="css/foundation.css" />
         <script src="js/vendor/modernizr.js"></script>
 		<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -77,12 +84,27 @@
             </div>
         </div>
 
+        <!--MAP AREA START-->
+        <div id="map" style="width:800px;height:700px;"></div>
+        <div id ="legend"> Overall Happiness Index Legend
+            <p class = "red"><3</p>
+            <p class = "orange">>=3 AND <4</p>
+            <p class = "yellow">>=4 AND <5</p>
+            <p class = "pink">>=5 AND <6</p>
+            <p class = "purple">>=6 AND <7</p>
+            <p class = "blue">>=7 & <8</p>
+            <p class = "green">>=8</p>
+        </div>
+
+        <!--MAP AREA END--> 
+
         <div class="row">
             <div class="large-12 columns" id="footer"><a href="https://github.com/offtap/happiness-index"><img src="img/GitHub-Mark.png"></a>
             </div>
         </div>
 
-
+        <script src="mapLocations.js"></script>
+        <script type="text/javascript" src="multi.js"></script>
         <script src="search.js"></script>
 	</body>
 </html>
