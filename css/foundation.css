@@ -42,7 +42,7 @@ body {
 body {
   background: white;
   color: #222222;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -51,15 +51,7 @@ body {
   position: relative;
   cursor: default;}
 
-#intro {
-font-family: "museo-sans",Arial,sans-serif;
-font-weight: bold;
-color: #000;
-line-height: 0.9;
-margin: 1rem 0;
-float: left;
-font-size: 1.5em;
-}
+
 
 #introbar {
   height: 30px;
@@ -67,6 +59,14 @@ background-color: black;
 width: 100vw;
 }
 
+#sidebar {
+  background-color: rgba(0,0,0, 0.7);
+
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+}
 #footer {
   position:fixed;
   bottom: 0;
@@ -79,14 +79,16 @@ font-size: 1.35rem;
 }
 
 #governmentArea2 {
+  color: white;
   text-align: right;
-  float: right;
+  float: left;
   padding-top: 2%;
   font-family: "PFDinTextCompProBold",Impact,Arial;
 font-size: 1.35rem;
 }
 
 #governmentArea1 {
+  color: white;
   padding-top: 2%;
   font-family: "PFDinTextCompProBold",Impact,Arial;
 font-size: 1.35rem;
@@ -211,8 +213,6 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
   width: 100%;
   float: left; }
 
@@ -356,8 +356,6 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
     float: left; }
 
   .small-1 {
@@ -585,8 +583,6 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
     float: left; }
 
   .medium-1 {
@@ -934,8 +930,7 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 2em;
-    padding-right: 2em;
+
     float: left; }
 
   .large-1 {

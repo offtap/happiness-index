@@ -20,27 +20,49 @@
 	</head>
 	<body> 
 
+    <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">Happiness Index</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+    </nav>
 
         <div class="row">
-            <div class="large-9 columns" id="intro">
-                
+            <div class="large-8 columns" id="intro">
+                        <!--MAP AREA START-->
+                <div id="map"></div>
+                <div id ="legend"> Overall Happiness Index Legend
+                    <p class = "red"><3</p>
+                    <p class = "orange">>=3 AND <4</p>
+                    <p class = "yellow">>=4 AND <5</p>
+                    <p class = "pink">>=5 AND <6</p>
+                    <p class = "purple">>=6 AND <7</p>
+                    <p class = "blue">>=7 & <8</p>
+                    <p class = "green">>=8</p>
+                </div>
+        <!--MAP AREA END--> 
             </div>
 
-            <div class="large-3 columns"></div>
-        </div>
-
-        <div class="introbar"></div>
-
-        <div class="row">
-                <div class="small-6 large-2 columns"id="governmentArea1">
+        <div class="large-4 columns" id="sidebar">
+            <div id="governmentArea1">
                     <form action='' method='post'>
                             <p><label>Local Government Area:</label><input id = "search" type='text' name='LGA' value='' class='auto'>
                             <button type="button" id="button" onclick="submitter()">Submit</button></p>
                     </form>
                     <p id = "output"></p>
-                
-                </div>
-            <div class="small-6 large-8 columns">
+                    <br>
+            </div>
+
+            <div id="governmentArea2">
+                <form action='' method='post'>
+                    <p><label>Local Government Area:</label><input id = "search2" type='text' name='LGA' value='' class='auto'>
+                    <button type="button" id="button1" onclick="submitter2()">Submit</button></p>
+                </form>
+                <p id = "output"></p>
+            </div>
+
                 <div id="skillChart">
                     <div id="bar1" class="skillBar"></div>
                     <div id="bar2" class="skillBar offcol"></div>
@@ -63,6 +85,7 @@
                     <div id="bar19" class="skillBar"></div>
                     <div id="bar20" class="skillBar offcol"></div>
                 </div>
+
                 <div id="skillLabelContainer">
                     <div id="label1" class="skillLabel"><p id="labelPara1"></p></div>
                     <div id="label2" class="skillLabel"><p id="labelPara2"></p></div>
@@ -73,35 +96,13 @@
                     <div id="label7" class="skillLabel"><p id="labelPara7"></p></div>
                     <div id="label8" class="skillLabel"><p id="labelPara8"></p></div>
                 </div>
-            </div>
-
-            <div class="small-12 large-2 columns" id="governmentArea2">
-                <form action='' method='post'>
-                    <p><label>Local Government Area:</label><input id = "search2" type='text' name='LGA' value='' class='auto'>
-                    <button type="button" id="button1" onclick="submitter2()">Submit</button></p>
-                </form>
-                <p id = "output"></p>
-            </div>
         </div>
 
-        <!--MAP AREA START-->
-        <div id="map" style="width:800px;height:700px;"></div>
-        <div id ="legend"> Overall Happiness Index Legend
-            <p class = "red"><3</p>
-            <p class = "orange">>=3 AND <4</p>
-            <p class = "yellow">>=4 AND <5</p>
-            <p class = "pink">>=5 AND <6</p>
-            <p class = "purple">>=6 AND <7</p>
-            <p class = "blue">>=7 & <8</p>
-            <p class = "green">>=8</p>
-        </div>
+        
 
-        <!--MAP AREA END--> 
+    
 
-        <div class="row">
-            <div class="large-12 columns" id="footer"><a href="https://github.com/offtap/happiness-index"><img src="img/GitHub-Mark.png"></a>
-            </div>
-        </div>
+
 
         <script src="mapLocations.js"></script>
         <script type="text/javascript" src="multi.js"></script>
