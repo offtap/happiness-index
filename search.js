@@ -97,18 +97,18 @@ function roundNumbers2(){
 
 //draw dataset 1 (animate height then marginTop)
 function drawData1(){
-		$('#bar1').animate({ height: stringData1[0] }, 1000); 
-    	$('#bar3').animate({ height: stringData1[1] }, 1000);
-	    $('#bar5').animate({ height: stringData1[2] }, 1000);
-	    $('#bar7').animate({ height: stringData1[3] }, 1000);
-	    $('#bar9').animate({ height: stringData1[4] }, 1000);
-	    $('#bar11').animate({ height: stringData1[5] }, 1000);
-	    $('#bar13').animate({ height: stringData1[6] }, 1000);
-	    $('#bar15').animate({ height: stringData1[7] }, 1000);
-	    $('#bar17').animate({ height: stringData1[8] }, 1000);
-	    $('#bar19').animate({ height: stringData1[9] }, 1000); 
+		$('#bar1').animate({ width: stringData1[0] }, 1000); 
+    	$('#bar3').animate({ width: stringData1[1] }, 1000);
+	    $('#bar5').animate({ width: stringData1[2] }, 1000);
+	    $('#bar7').animate({ width: stringData1[3] }, 1000);
+	    $('#bar9').animate({ width: stringData1[4] }, 1000);
+	    $('#bar11').animate({ width: stringData1[5] }, 1000);
+	    $('#bar13').animate({ width: stringData1[6] }, 1000);
+	    $('#bar15').animate({ width: stringData1[7] }, 1000);
+	    $('#bar17').animate({ width: stringData1[8] }, 1000);
+	    $('#bar19').animate({ width: stringData1[9] }, 1000); 
 
-	    $('#bar1').animate({ marginTop: topMargins1[0] }, 1000); 
+	    /*$('#bar1').animate({ marginTop: topMargins1[0] }, 1000); 
     	$('#bar3').animate({ marginTop: topMargins1[1] }, 1000);
 	    $('#bar5').animate({ marginTop: topMargins1[2] }, 1000);
 	    $('#bar7').animate({ marginTop: topMargins1[3] }, 1000);
@@ -117,23 +117,23 @@ function drawData1(){
 	    $('#bar13').animate({ marginTop: topMargins1[6] }, 1000);
 	    $('#bar15').animate({ marginTop: topMargins1[7] }, 1000);
 	    $('#bar17').animate({ marginTop: topMargins1[8] }, 1000);
-	    $('#bar19').animate({ marginTop: topMargins1[9] }, 1000);
+	    $('#bar19').animate({ marginTop: topMargins1[9] }, 1000);*/
 }
 
 //draw dataset 2 (animate height then marginTop)
 function drawData2(){
-		$('#bar2').animate({ height: stringData2[0] }, 1000); 
-    	$('#bar4').animate({ height: stringData2[1] }, 1000);
-	    $('#bar6').animate({ height: stringData2[2] }, 1000);
-	    $('#bar8').animate({ height: stringData2[3] }, 1000);
-	    $('#bar10').animate({ height: stringData2[4] }, 1000);
-	    $('#bar12').animate({ height: stringData2[5] }, 1000);
-	    $('#bar14').animate({ height: stringData2[6] }, 1000);
-	    $('#bar16').animate({ height: stringData2[7] }, 1000);
-	    $('#bar18').animate({ height: stringData2[8] }, 1000);
-	    $('#bar20').animate({ height: stringData2[9] }, 1000);  
+		$('#bar2').animate({ width: stringData2[0] }, 1000); 
+    	$('#bar4').animate({ width: stringData2[1] }, 1000);
+	    $('#bar6').animate({ width: stringData2[2] }, 1000);
+	    $('#bar8').animate({ width: stringData2[3] }, 1000);
+	    $('#bar10').animate({ width: stringData2[4] }, 1000);
+	    $('#bar12').animate({ width: stringData2[5] }, 1000);
+	    $('#bar14').animate({ width: stringData2[6] }, 1000);
+	    $('#bar16').animate({ width: stringData2[7] }, 1000);
+	    $('#bar18').animate({ width: stringData2[8] }, 1000);
+	    $('#bar20').animate({ width: stringData2[9] }, 1000);  
 
-	    $('#bar2').animate({ marginTop: topMargins2[0] }, 1000); 
+	    /*$('#bar2').animate({ marginTop: topMargins2[0] }, 1000); 
     	$('#bar4').animate({ marginTop: topMargins2[1] }, 1000);
 	    $('#bar6').animate({ marginTop: topMargins2[2] }, 1000);
 	    $('#bar8').animate({ marginTop: topMargins2[3] }, 1000);
@@ -142,6 +142,16 @@ function drawData2(){
 	    $('#bar14').animate({ marginTop: topMargins2[6] }, 1000);
 	    $('#bar16').animate({ marginTop: topMargins2[7] }, 1000);
 	    $('#bar18').animate({ marginTop: topMargins2[8] }, 1000);
-	    $('#bar20').animate({ marginTop: topMargins2[9] }, 1000);  
+	    $('#bar20').animate({ marginTop: topMargins2[9] }, 1000);  */
+}
+
+function sideBarAnimate(){
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function hideSidebar(){
+		$('#hiddenSidebar').animate({ marginRight:-430 }, 1000);
+		document.getElementById("hideSidebar").style.display = "none";
 }
 

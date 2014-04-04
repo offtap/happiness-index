@@ -6,25 +6,25 @@ var locName = "";
 var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
     
 var icons = [
-	iconURLPrefix + 'red-dot.png',
+	/*iconURLPrefix + 'red-dot.png',
     iconURLPrefix + 'orange-dot.png',
 	iconURLPrefix + 'yellow-dot.png',
 	iconURLPrefix + 'pink-dot.png',
 	iconURLPrefix + 'purple-dot.png',
 	iconURLPrefix + 'blue-dot.png',
-	iconURLPrefix + 'green-dot.png'
+	iconURLPrefix + 'green-dot.png'*/
 	//heatmap icons
-	/*'img/mapIcon1.png',
+	'img/mapIcon1.png',
     'img/mapIcon2.png',
 	'img/mapIcon3.png',
 	'img/mapIcon4.png',
 	'img/mapIcon5.png',
 	'img/mapIcon6.png',
-	'img/mapIcon7.png'*/
+	'img/mapIcon7.png'
 ]
 
 var icons_length = icons.length;
-    
+
 var map = new google.maps.Map(document.getElementById('map'), {
 	zoom: 10,
     center: new google.maps.LatLng(-26.4425664,133.2813229),
