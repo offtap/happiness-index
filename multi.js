@@ -14,13 +14,13 @@ var icons = [
 	iconURLPrefix + 'blue-dot.png',
 	iconURLPrefix + 'green-dot.png'*/
 	//heatmap icons
-	'img/mapIcon1.png',
-    'img/mapIcon2.png',
-	'img/mapIcon3.png',
-	'img/mapIcon4.png',
-	'img/mapIcon5.png',
-	'img/mapIcon6.png',
-	'img/mapIcon7.png'
+	'img/mapIcon1-1.png',
+    'img/mapIcon1-2.png',
+	'img/mapIcon1-3.png',
+	'img/mapIcon1-4.png',
+	'img/mapIcon1-5.png',
+	'img/mapIcon1-6.png',
+	'img/mapIcon1-7.png'
 ]
 
 var icons_length = icons.length;

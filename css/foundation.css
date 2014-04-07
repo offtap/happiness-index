@@ -44,7 +44,7 @@ body {
   color: #222222;
   padding-left: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -59,12 +59,12 @@ width: 100vw;
 }
 
 #sidebar {
-  background-color: rgba(0,0,0, 0.7);
+  background-color: #fafafa;
   height:100vh;
 
 }
 #map {
-  width: 100vw;
+  width: 100;
   height: 100vh;
 }
 #footer {
@@ -1222,7 +1222,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: #48a6e5;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -1437,7 +1437,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #1c1821;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -1705,8 +1705,8 @@ height: 2rem;
 min-width: 6rem;
 padding: 0.2rem 0.2rem;
 border: none;
-border-bottom: 3px solid #c20027;
-background: #f03;
+border-bottom: 3px solid #2aaf84;
+background: #25ce98;
 color: #fff;
 font-family: Arial;
 font-size: 1rem;
@@ -1728,8 +1728,8 @@ height: 2rem;
 min-width: 6rem;
 padding: 0.2rem 0.2rem;
 border: none;
-border-bottom: 3px solid #2B505C;
-background: #007095;
+border-bottom: 3px solid #acacac;
+background: #bbbbba;
 color: #fff;
 font-family: Arial;
 font-size: 1rem;
@@ -3146,7 +3146,7 @@ a {
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #888784; }
   a img {
     border: none; }
 
@@ -3168,7 +3168,6 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3958,8 +3957,7 @@ body {
 /* Default styles for the container */
 .joyride-tip-guide {
   position: absolute;
-  background: #000;
-  background: rgba(0,0,0,0.8);
+  background: #25ce98;
   display: none;
   color: #fff;
   width: 300px;
@@ -4011,8 +4009,7 @@ body {
   border-bottom-color so here we set the border-color
   and override the top,left,right colors below.
   */
-  border-color: #000;
-  border-color: rgba(0,0,0,0.8);
+  border-color: #2aaf84;
   border-top-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -4029,8 +4026,7 @@ body {
   border-top-color so here we set the border-color
   and override the bottom,left,right colors below.
   */
-  border-color: #000;
-  border-color: rgba(0,0,0,0.8) !important;
+  border-color: #25ce98;
   border-bottom-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -4040,8 +4036,7 @@ body {
 }
 
 .joyride-tip-guide span.joyride-nub.right {
-  border-color: #000;
-  border-color: rgba(0,0,0,0.8) !important;
+  border-color: #25ce98;
   border-top-color: transparent !important;
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
@@ -4066,8 +4061,7 @@ body {
 }
 
 .joyride-tip-guide span.joyride-nub.top-right {
-  border-color: #000;
-  border-color: rgba(0,0,0,0.8);
+  border-color: #25ce98;
   border-top-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -4116,41 +4110,20 @@ body {
   font-size: 13px;
   text-decoration: none;
   color: rgb(255,255,255);
-  border: solid 1px rgb(0,60,180);
-  background: rgb(0,99,255);
-  background: -moz-linear-gradient(top, rgb(0,99,255) 0%, rgb(0,85,214) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,99,255)), color-stop(100%,rgb(0,85,214)));
-  background: -webkit-linear-gradient(top, rgb(0,99,255) 0%,rgb(0,85,214) 100%);
-  background: -o-linear-gradient(top, rgb(0,99,255) 0%,rgb(0,85,214) 100%);
-  background: -ms-linear-gradient(top, rgb(0,99,255) 0%,rgb(0,85,214) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0063ff', endColorstr='#0055d6',GradientType=0 );
-  background: linear-gradient(top, rgb(0,99,255) 0%,rgb(0,85,214) 100%);
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.3) inset;
-     -moz-box-shadow: 0px 1px 0px rgba(255,255,255,0.3) inset;
-          box-shadow: 0px 1px 0px rgba(255,255,255,0.3) inset;
+  border-bottom: 3px solid #888784;
+  background: #bbbbba;
 }
 
 .joyride-next-tip:hover {
-  color: rgb(255,255,255) !important;
-  border: solid 1px rgb(0,60,180) !important;
-  background: rgb(43,128,255);
-  background: -moz-linear-gradient(top, rgb(43,128,255) 0%, rgb(29,102,211) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(43,128,255)), color-stop(100%,rgb(29,102,211)));
-  background: -webkit-linear-gradient(top, rgb(43,128,255) 0%,rgb(29,102,211) 100%);
-  background: -o-linear-gradient(top, rgb(43,128,255) 0%,rgb(29,102,211) 100%);
-  background: -ms-linear-gradient(top, rgb(43,128,255) 0%,rgb(29,102,211) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b80ff', endColorstr='#1d66d3',GradientType=0 );
-  background: linear-gradient(top, rgb(43,128,255) 0%,rgb(29,102,211) 100%);
+  color: white!important;
+  border-bottom: 3px solid #888784;
+  background: #bbbbba;
 }
 
 .joyride-timer-indicator-wrap {
   width: 50px;
   height: 3px;
-  border: solid 1px rgba(255,255,255,0.1);
+  border: solid 1px #888784;
   position: absolute;
   right: 17px;
   bottom: 16px;
@@ -4221,7 +4194,7 @@ body {
       border-right-color: transparent !important;
       bottom: -20px; }
     .joyride-tip-guide .joyride-nub.right {
-      border-color: #333333 !important;
+      border-color: #2aaf84 !important;
       border-top-color: transparent !important;
       border-right-color: transparent !important;
       border-bottom-color: transparent !important;

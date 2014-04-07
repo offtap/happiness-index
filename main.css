@@ -12,15 +12,15 @@
     height:20px;
     margin-top:1px;
     margin-bottom:1px;
-    background-color:#f03;
-    border-bottom: 3px solid #c20027;
+    background-color:#25ce98;
+    border-bottom: 3px solid #2aaf84;
     cursor:pointer;
 }
 
 .offcol{
     height:8px;
-    background-color:#007095;
-    border-bottom: 3px solid #2B505C;
+    background-color:#bbbbba;
+    border-bottom: 3px solid #888784;
     margin-top:1px;
     margin-bottom:5px;
 }
@@ -54,8 +54,8 @@
 #legend{
     width:100%;
     position:fixed;
-    bottom:0;
-    left:0;
+    bottom:5%;
+    left:2%;
     color: #fafafa;
     text-align: center;
     text-transform: uppercase;
@@ -72,15 +72,19 @@
 }
 
 .red{
-    background:red;
-        -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
+    background: #fa0000; /* Old browsers */
+background: -moz-linear-gradient(left, #fa0000 0%, #fa0000 19%, #fa0000 19%, #ff7d00 34%, #ffc800 49%, #96c800 67%, #64c800 82%, #00c800 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fa0000), color-stop(19%,#fa0000), color-stop(19%,#fa0000), color-stop(34%,#ff7d00), color-stop(49%,#ffc800), color-stop(67%,#96c800), color-stop(82%,#64c800), color-stop(100%,#00c800)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #fa0000 0%,#fa0000 19%,#fa0000 19%,#ff7d00 34%,#ffc800 49%,#96c800 67%,#64c800 82%,#00c800 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #fa0000 0%,#fa0000 19%,#fa0000 19%,#ff7d00 34%,#ffc800 49%,#96c800 67%,#64c800 82%,#00c800 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #fa0000 0%,#fa0000 19%,#fa0000 19%,#ff7d00 34%,#ffc800 49%,#96c800 67%,#64c800 82%,#00c800 100%); /* IE10+ */
+background: linear-gradient(to right, #fa0000 0%,#fa0000 19%,#fa0000 19%,#ff7d00 34%,#ffc800 49%,#96c800 67%,#64c800 82%,#00c800 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa0000', endColorstr='#00c800',GradientType=1 ); /* IE6-9 */
+width: 20%;
+height: 40%;
     }
 
-.orange{background:orange;
+/*.orange{background:orange;
     -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
     box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
@@ -121,7 +125,7 @@
     box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
     height: 10vh;
     width: 5%;
-    }
+    }*/
 
 @media only screen and (max-device-width: 480px) {
     #map {

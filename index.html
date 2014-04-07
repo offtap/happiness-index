@@ -5,6 +5,7 @@
   		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css" type="text/css" /> 
 
         <link rel="stylesheet" href="main.css" type="text/css"/> 
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 
         <!--MAP LINKS-->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -38,13 +39,13 @@
                         <!--MAP AREA START-->
                 <div id="map"></div>
                 <div id ="legend"> Overall Happiness Index Legend
-                    <p class = "red"><3</p>
-                    <p class = "orange">>=3 AND <4</p>
-                    <p class = "yellow">>=4 AND <5</p>
-                    <p class = "pink">>=5 AND <6</p>
-                    <p class = "purple">>=6 AND <7</p>
-                    <p class = "blue">>=7 & <8</p>
-                    <p class = "green">>=8</p>
+                    <p class = "red"></p>
+                    <p class = "orange"></p>
+                    <p class = "yellow"></p>
+                    <p class = "pink"></p>
+                    <p class = "purple"></p>
+                    <p class = "blue"></p>
+                    <p class = "green"></p>
                 </div>
         <!--MAP AREA END--> 
             </div>
@@ -52,14 +53,14 @@
         <div class="small-4 columns" id="sidebar">
             <div id="governmentArea1">
                     <form action='' method='post'>
-                            <label><span style="color:white;">Local Government Area:</span></label><input id = "search" type='text' name='LGA' value='' class='auto'>
+                            <label><span style="color:black;">Local Government Area:</span></label><input id = "search" type='text' name='LGA' value='' class='auto'>
                             <button type="button" id="button" onclick="submitter()">Submit</button>
                     </form>
             </div>
 
             <div id="governmentArea2">
                 <form action='' method='post'>
-                    <label><span style="color:white;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA' value='' class='auto'>
+                    <label><span style="color:black;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA' value='' class='auto'>
                     <button type="button" id="button1" onclick="submitter2()">Compare</button>
                 </form>
             </div>
@@ -140,14 +141,14 @@
         <script src="js/foundation/foundation.joyride.js"></script>
         <script src="js/vendor/jquery.cookie.js"></script>
         <script type="text/javascript" src="jquery.joyride-2.1.js"></script>
-        <!-- runs the joyride only once -->
+        <!-- runs the joyride only once 
         <script type="text/javascript">
                 $("#joyRideTipContent").joyride({
             cookieMonster: true,
             cookieName: 'JoyRide',
             cookieDomain: false
         });
-        </script> 
+        </script> -->
         
         <!-- runs joyride -->
         <script>
