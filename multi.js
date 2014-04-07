@@ -102,11 +102,11 @@ function findLocation(){
       		map.setZoom(12); 
 		}
 	}
-	outputSubHeader.innerHTML += locName;
+	outputSubHeader1.innerHTML = locName;
 }
 
 function setLocName2(){
 		locName2 = document.getElementById('search2').value;
 		locName2 = locName2.substring(0, locName2.indexOf('(') - 1);
-		outputSubHeader.innerHTML += " vs. " + locName2;
+		outputSubHeader2.innerHTML = locName2;
 }

@@ -85,11 +85,20 @@ font-size: 1rem;
   margin-bottom:0px;
 }
 
-#outputSubHeader{
+#outputSubHeader1{
   color:white;
   margin-left:20px;
   margin-top:10px;
   margin-bottom:0px;
+  float:left;
+}
+
+#outputSubHeader2{
+  color:white;
+  margin-right:20px;
+  margin-top:10px;
+  margin-bottom:0px;
+  float:right;
 }
 
 #governmentArea1 {
@@ -152,15 +161,37 @@ font-size: 1rem;
   height:80vh;
   margin-top:20px;
   margin-left:20px;
-  max-width:30%;
+  width:20%;
+  clear:both;
   float:left;
 }
 
 #output2{
   height:80vh;
   margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:20%;
+  float:left;
+}
+
+#output3{
+  height:80vh;
+  margin-top:20px;
+  margin-left:5%;
+  margin-right:auto;
+  width:20%;
+  float:left;
+  text-align:center;
+}
+
+#output4{
+  height:80vh;
+  margin-top:20px;
   margin-right:20px;
-  max-width:30%;
+  margin-left:0px;
+  text-align:right;
+  width:20%;
   float:right;
 }
 

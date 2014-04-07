@@ -112,90 +112,117 @@ function drawData2(){
 }
 
 function sidebarIn1(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 	   	outputHeader.innerHTML = "Housing Affordability" +"<BR>";
 	    for(var i=16; i<33; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn2(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Wealth" +"<BR>";
 	    for(var i=119; i<123; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn3(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Jobs" +"<BR>";
 	    for(var i=94; i<105; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn4(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Community" +"<BR>";
 	    for(var i=35; i<51; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn5(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Education" +"<BR>";
 	    for(var i=73; i<92; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn6(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Safety" +"<BR>";
 	    for(var i=53; i<58; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn7(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Health" +"<BR>";
 	    for(var i=60; i<71; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn8(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Work-life Balance" +"<BR>";
 	    for(var i=125; i<147; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn9(){
+		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Remoteness" +"<BR>";
 	    for(var i=107; i<117; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output2.innerHTML += serverResponse2[0][i]+"<BR>";
+			output.innerHTML += "Label X" + "<BR>";
+			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output3.innerHTML += "vs." + "<BR>";
+			output4.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -206,5 +233,8 @@ function sidebarOut(){
 		document.getElementById("hideSidebar").style.display = "none";
 		setTimeout(function(){output.innerHTML = ""},1000);
 		setTimeout(function(){output2.innerHTML = ""},1000);
+		setTimeout(function(){output3.innerHTML = ""},1000);
+		setTimeout(function(){output4.innerHTML = ""},1000);
+		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
 }
 
