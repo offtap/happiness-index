@@ -1,6 +1,10 @@
 //GLOBALS
 var serverResponse;
 var serverResponse2;
+
+var serverResponseTransformed = new Array(); 
+var serverResponseTransformed2 = new Array(); 
+
 var stringData1 = new Array(); 
 var stringData2 = new Array();
 var topMargins1 = new Array();
@@ -24,12 +28,13 @@ function submitter(){
 			output.innerHTML += "["+i+"]"+serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
 		}*/
 		dataToStrings();
-		//setDataMargins1();
 		drawData1();
+		locName1 = document.getElementById("search").value;
 	});
 }
 
 function submitter2(){
+	setLocName2();
 	output.innerHTML = ""; //clear output
 	$.post("db.php", {LGA:document.getElementById("search2").value}, function(response){ //call db.php with search string called LGA and resturn a response
 		console.log(response); //debug and testing of JSON return value
@@ -44,51 +49,37 @@ function submitter2(){
 
 function dataToStrings(){
 	for(var n=4;n<14;n++){
-		serverResponse[0][n] = serverResponse[0][n] * 30;
+		serverResponseTransformed[n-4] = serverResponse[0][n] * 30;
 	}
 	roundNumbers();
-	calcMarginTop1();
-	for(var i=4;i<14;i++){
-	var num = serverResponse[0][i];
+	for(var i=0;i<10;i++){
+	var num = serverResponseTransformed[i];
 	var numString = num.toString();
-	stringData1[i-4] = numString;
+	stringData1[i] = numString;
 	}
 }
 
 function dataToStrings2(){
 	for(var n=4;n<14;n++){
-		serverResponse2[0][n] = serverResponse2[0][n] * 30;
+		serverResponseTransformed2[n-4] = serverResponse2[0][n] * 30;
 	}
 	roundNumbers2();
-	calcMarginTop2();
-	for(var i=4;i<14;i++){
-	var num = serverResponse2[0][i];
+	for(var i=0;i<10;i++){
+	var num = serverResponseTransformed2[i];
 	var numString = num.toString();
-	stringData2[i-4] = numString;
-	}
-}
-
-//calculate the marginTop necessary for each specific datapoint to bring them to have even bottom levels
-function calcMarginTop1(){
-	for(var i=4;i<14;i++){
-		topMargins1[i-4] = 350 - serverResponse[0][i];
-	}
-}
-function calcMarginTop2(){
-	for(var i=4;i<14;i++){
-		topMargins2[i-4] = 350 - serverResponse2[0][i];
+	stringData2[i] = numString;
 	}
 }
 
 //round numbers to whole numbers for pixel calculation in div height/marginTop
 function roundNumbers(){
-	for(var i=4;i<14;i++){
-		serverResponse[0][i] = Math.round(serverResponse[0][i]);
+	for(var i=0;i<10;i++){
+		serverResponseTransformed[i] = Math.round(serverResponseTransformed[i]);
 	}
 }
 function roundNumbers2(){
-	for(var i=4;i<14;i++){
-		serverResponse2[0][i] = Math.round(serverResponse2[0][i]);
+	for(var i=0;i<10;i++){
+		serverResponseTransformed2[i] = Math.round(serverResponseTransformed2[i]);
 	}
 }
 
@@ -121,81 +112,90 @@ function drawData2(){
 }
 
 function sidebarIn1(){
-	   	output.innerHTML = "Sector 1" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+	   	outputHeader.innerHTML = "Housing Affordability" +"<BR>";
+	    for(var i=16; i<33; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn2(){
-		output.innerHTML = "Sector 2" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		outputHeader.innerHTML = "Wealth" +"<BR>";
+	    for(var i=119; i<123; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn3(){
-		output.innerHTML = "Sector 3" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
-			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		outputHeader.innerHTML = "Jobs" +"<BR>";
+	    for(var i=94; i<105; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn4(){
-		output.innerHTML = "Sector 4" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Community" +"<BR>";
+	    for(var i=35; i<51; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn5(){
-		output.innerHTML = "Sector 5" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Education" +"<BR>";
+	    for(var i=73; i<92; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn6(){
-		output.innerHTML = "Sector 6" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Safety" +"<BR>";
+	    for(var i=53; i<58; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn7(){
-		output.innerHTML = "Sector 7" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Health" +"<BR>";
+	    for(var i=60; i<71; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn8(){
-		output.innerHTML = "Sector 8" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Work-life Balance" +"<BR>";
+	    for(var i=125; i<147; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
 function sidebarIn9(){
-		output.innerHTML = "Sector 9" +"<BR>";
-	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+		outputHeader.innerHTML = "Remoteness" +"<BR>";
+	    for(var i=107; i<117; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+			output2.innerHTML += serverResponse2[0][i]+"<BR>";
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -205,5 +205,6 @@ function sidebarOut(){
 		$('#hiddenSidebar').animate({ marginRight:-430 }, 1000);
 		document.getElementById("hideSidebar").style.display = "none";
 		setTimeout(function(){output.innerHTML = ""},1000);
+		setTimeout(function(){output2.innerHTML = ""},1000);
 }
 

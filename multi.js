@@ -1,6 +1,8 @@
 // Define your locations: HTML content for the info window, latitude, longitude
 var geoLocIndex = 0;
 var locName = "";
+var locName2 = "";
+
     
 // Setup the different icons
 var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
@@ -100,4 +102,11 @@ function findLocation(){
       		map.setZoom(12); 
 		}
 	}
+	outputSubHeader.innerHTML += locName;
+}
+
+function setLocName2(){
+		locName2 = document.getElementById('search2').value;
+		locName2 = locName2.substring(0, locName2.indexOf('(') - 1);
+		outputSubHeader.innerHTML += " vs. " + locName2;
 }

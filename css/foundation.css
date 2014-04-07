@@ -78,8 +78,18 @@ width: 100vw;
 font-size: 1rem;
 }
 
-#output{
-  height:0px;
+#outputHeader{
+  color:white;
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:0px;
+}
+
+#outputSubHeader{
+  color:white;
+  margin-left:20px;
+  margin-top:10px;
+  margin-bottom:0px;
 }
 
 #governmentArea1 {
@@ -139,16 +149,22 @@ font-size: 1rem;
 
 #output{
   height:80vh;
-  margin-top:30px;
+  margin-top:20px;
   margin-left:20px;
-  max-width:80%;
+  max-width:40%;
+  float:left;
+}
+
+#output2{
+  height:80vh;
+  margin-top:20px;
+  margin-right:20px;
+  max-width:40%;
+  float:right;
 }
 
 a:hover {
   cursor: pointer; }
-
-img {
-}
 
 img {
   -ms-interpolation-mode: bicubic; }
