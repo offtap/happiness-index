@@ -202,7 +202,7 @@ function sidebarIn9(){
 }
 
 function sidebarOut(){
-		$('#hiddenSidebar').animate({ marginRight:-430 }, 1000);
+		$('#hiddenSidebar').animate({ marginRight:-500 }, 1000);
 		document.getElementById("hideSidebar").style.display = "none";
 		setTimeout(function(){output.innerHTML = ""},1000);
 		setTimeout(function(){output2.innerHTML = ""},1000);
