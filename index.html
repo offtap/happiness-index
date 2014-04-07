@@ -30,7 +30,7 @@
             </li>
             <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
           </ul>
-          <p id="hideSidebar" onClick="hideSidebar()"> Back > </p>
+          <p id="hideSidebar" onClick="sidebarOut()"> Back > </p>
     </nav>
 
         <div class="row">
@@ -55,35 +55,33 @@
                             <label><span style="color:white;">Local Government Area:</span></label><input id = "search" type='text' name='LGA' value='' class='auto'>
                             <button type="button" id="button" onclick="submitter()">Submit</button>
                     </form>
-                    <p id = "output"></p>
             </div>
 
             <div id="governmentArea2">
                 <form action='' method='post'>
                     <label><span style="color:white;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA' value='' class='auto'>
-                    <button type="button" id="button1" onclick="submitter2()">Submit</button>
+                    <button type="button" id="button1" onclick="submitter2()">Compare</button>
                 </form>
-                <p id = "output"></p>
             </div>
 
                 <div id="skillChart">
-                    <div id="bar1" class="skillBar" onClick="sideBarAnimate()"></div>
+                    <div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
                     <div id="bar2" class="skillBar offcol"></div>
-                    <div id="bar3" class="skillBar"></div>
+                    <div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
                     <div id="bar4" class="skillBar offcol"></div>
-                    <div id="bar5" class="skillBar"></div>
+                    <div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
                     <div id="bar6" class="skillBar offcol"></div>
-                    <div id="bar7" class="skillBar"></div>
+                    <div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
                     <div id="bar8" class="skillBar offcol"></div>
-                    <div id="bar9" class="skillBar"></div>
+                    <div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
                     <div id="bar10" class="skillBar offcol"></div>
-                    <div id="bar11" class="skillBar"></div>
+                    <div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
                     <div id="bar12" class="skillBar offcol"></div>
-                    <div id="bar13" class="skillBar"></div>
+                    <div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
                     <div id="bar14" class="skillBar offcol"></div>
-                    <div id="bar15" class="skillBar"></div>
+                    <div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
                     <div id="bar16" class="skillBar offcol"></div>
-                    <div id="bar17" class="skillBar"></div>
+                    <div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
                     <div id="bar18" class="skillBar offcol"></div>
                     <div id="bar19" class="skillBar"></div>
                     <div id="bar20" class="skillBar offcol"></div>
@@ -100,9 +98,11 @@
                     <div id="label8" class="skillLabel"><p id="labelPara8"></p></div>
                 </div>-->
 
-       <!-- </div>
+        </div>
             <div class="large-4 columns" id="hiddenSidebar">
-        </div> -->
+                <h1 id="outputHeader"></h1>
+                <p id="output"></p>
+        </div>
 
       <!-- Tip Content -->
         <ol id="joyRideTipContent">

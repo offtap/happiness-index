@@ -38,7 +38,6 @@ function submitter2(){
 			output.innerHTML += "["+i+"]"+serverResponse2[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
 		}*/
 		dataToStrings2();
-		//setDataMargins1();
 		drawData2();
 	});
 }
@@ -53,7 +52,6 @@ function dataToStrings(){
 	var num = serverResponse[0][i];
 	var numString = num.toString();
 	stringData1[i-4] = numString;
-	//output.innerHTML += stringData1[i-4] + "<br>";
 	}
 }
 
@@ -67,7 +65,6 @@ function dataToStrings2(){
 	var num = serverResponse2[0][i];
 	var numString = num.toString();
 	stringData2[i-4] = numString;
-	//output.innerHTML += stringData1[i-4] + "<br>";
 	}
 }
 
@@ -107,17 +104,6 @@ function drawData1(){
 	    $('#bar15').animate({ width: stringData1[7] }, 1000);
 	    $('#bar17').animate({ width: stringData1[8] }, 1000);
 	    $('#bar19').animate({ width: stringData1[9] }, 1000); 
-
-	    /*$('#bar1').animate({ marginTop: topMargins1[0] }, 1000); 
-    	$('#bar3').animate({ marginTop: topMargins1[1] }, 1000);
-	    $('#bar5').animate({ marginTop: topMargins1[2] }, 1000);
-	    $('#bar7').animate({ marginTop: topMargins1[3] }, 1000);
-	    $('#bar9').animate({ marginTop: topMargins1[4] }, 1000);
-	    $('#bar11').animate({ marginTop: topMargins1[5] }, 1000);
-	    $('#bar13').animate({ marginTop: topMargins1[6] }, 1000);
-	    $('#bar15').animate({ marginTop: topMargins1[7] }, 1000);
-	    $('#bar17').animate({ marginTop: topMargins1[8] }, 1000);
-	    $('#bar19').animate({ marginTop: topMargins1[9] }, 1000);*/
 }
 
 //draw dataset 2 (animate height then marginTop)
@@ -132,26 +118,92 @@ function drawData2(){
 	    $('#bar16').animate({ width: stringData2[7] }, 1000);
 	    $('#bar18').animate({ width: stringData2[8] }, 1000);
 	    $('#bar20').animate({ width: stringData2[9] }, 1000);  
-
-	    /*$('#bar2').animate({ marginTop: topMargins2[0] }, 1000); 
-    	$('#bar4').animate({ marginTop: topMargins2[1] }, 1000);
-	    $('#bar6').animate({ marginTop: topMargins2[2] }, 1000);
-	    $('#bar8').animate({ marginTop: topMargins2[3] }, 1000);
-	    $('#bar10').animate({ marginTop: topMargins2[4] }, 1000);
-	    $('#bar12').animate({ marginTop: topMargins2[5] }, 1000);
-	    $('#bar14').animate({ marginTop: topMargins2[6] }, 1000);
-	    $('#bar16').animate({ marginTop: topMargins2[7] }, 1000);
-	    $('#bar18').animate({ marginTop: topMargins2[8] }, 1000);
-	    $('#bar20').animate({ marginTop: topMargins2[9] }, 1000);  */
 }
 
-function sideBarAnimate(){
+function sidebarIn1(){
+	   	output.innerHTML = "Sector 1" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
 }
 
-function hideSidebar(){
+function sidebarIn2(){
+		output.innerHTML = "Sector 2" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn3(){
+		output.innerHTML = "Sector 3" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn4(){
+		output.innerHTML = "Sector 4" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn5(){
+		output.innerHTML = "Sector 5" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn6(){
+		output.innerHTML = "Sector 6" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn7(){
+		output.innerHTML = "Sector 7" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn8(){
+		output.innerHTML = "Sector 8" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarIn9(){
+		output.innerHTML = "Sector 9" +"<BR>";
+	    for(var i=1; i<14; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+			output.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
+		}
+	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
+	    document.getElementById("hideSidebar").style.display = "block";
+}
+
+function sidebarOut(){
 		$('#hiddenSidebar').animate({ marginRight:-430 }, 1000);
 		document.getElementById("hideSidebar").style.display = "none";
+		setTimeout(function(){output.innerHTML = ""},1000);
 }
 
