@@ -29,6 +29,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
 	zoom: 10,
     center: new google.maps.LatLng(-26.4425664,133.2813229),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: customMapStyles,
       mapTypeControl: false,
       streetViewControl: false,
       panControl: false,

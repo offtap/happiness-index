@@ -55,20 +55,79 @@
     position:fixed;
     bottom:0;
     left:0;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #legend p{
     margin:0;
-    padding:0;
-    width:50px;
     float:left;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.red{background:red;}
-.orange{background:orange;}
-.yellow{background:yellow;}
-.pink{background:pink;}
-.purple{background:purple;}
-.blue{background:blue;}
-.green{background:green;}
+.red{
+    background:red;
+        -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
 
+.orange{background:orange;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+.yellow{background:yellow;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+.pink{background:pink;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+.purple{background:purple;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+.blue{background:blue;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+.green{background:green;
+    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
+    height: 10vh;
+    width: 5%;
+    }
+
+@media only screen and (max-device-width: 480px) {
+    #map {
+        height: 20vh;
+    }
+
+    #intro {
+        height: 20vh;
+    }
+}
