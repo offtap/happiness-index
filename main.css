@@ -1,6 +1,6 @@
 #skillChart{
     width:80%;
-    height:420px;
+    height:70%;
     margin-left:25px;
     margin-right:auto;
     text-align:left;
@@ -9,7 +9,7 @@
 
 .skillBar {
     width:0px;
-    height:20px;
+    height:5%;
     margin-top:1px;
     margin-bottom:1px;
     margin-left: 8%;
@@ -19,7 +19,7 @@
 }
 
 .offcol{
-    height:8px;
+    height:1.5%;
     background-color:#bbbbba;
     border-bottom: 3px solid #888784;
     margin-top:1px;
