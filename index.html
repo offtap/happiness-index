@@ -6,9 +6,10 @@
 
         <meta name="viewport" content="width=device-width" /> 
 
-        <link rel="stylesheet" href="main.css" type="text/css"/> 
+        <link rel="stylesheet" href="css/main.css" type="text/css"/> 
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
         <!--MAP LINKS-->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -30,12 +31,12 @@
     <nav class="top-bar" data-topbar>
           <ul class="title-area">
             <li class="name">
-              <h1 id="numero1" class="so-awesome"><a href="#">Happiness Index</a></h1>
+              <h1 id="numero1" class="so-awesome"><a href="#"><img src="img/logo.png" id="logo">.</a></h1>
             </li>
           </ul>
-          <p id="hideSidebar" onClick="sidebarOut()"> Back > </p>
-           <p id="showInfoBar" onClick="infoBarIn()"> Info </p>
-           <p id="hideInfoBar" onClick="infoBarOut()"> Info Out </p>
+          <p id="hideSidebar" onClick="sidebarOut()"><span style="font-size: 1.5em; line-height:1px;"><i class="fa fa-arrow-circle-right"></i></span></p>
+           <p id="showInfoBar" onClick="infoBarIn()"><span style="font-size: 1.5em; line-height:1px;"><i class="fa fa-info-circle"></i></span></p>
+           <p id="hideInfoBar" onClick="infoBarOut()"><span style="font-size: 1.5em; line-height:1px;"><i class="fa fa-arrow-circle-right"></i></span></p>
     </nav>
 
         <div class="row">
@@ -140,18 +141,18 @@
         <script>
           $(document).foundation();
         </script>
-        <script src="jquery-1.8.2.min.js"></script>
-        <script src="mapLocations.js"></script>
-        <script src="customMapStyles.js"></script>
-        <script type="text/javascript" src="multi.js"></script>
-        <script src="search.js"></script>
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/mapLocations.js"></script>
+        <script src="js/customMapStyles.js"></script>
+        <script type="text/javascript" src="js/multi.js"></script>
+        <script src="js/search.js"></script>
         <script src="js/foundation.joyride.js"</script>
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.joyride.js"></script>
         <script src="js/vendor/jquery.cookie.js"></script>
-        <script type="text/javascript" src="jquery.joyride-2.1.js"></script>
+        <script type="text/javascript" src="js/jquery.joyride-2.1.js"></script>
         <!-- runs the joyride only once 
         <script type="text/javascript">
                 $("#joyRideTipContent").joyride({

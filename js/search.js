@@ -122,6 +122,7 @@ function sidebarIn1(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn2(){
@@ -135,6 +136,7 @@ function sidebarIn2(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn3(){
@@ -148,6 +150,7 @@ function sidebarIn3(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn4(){
@@ -161,6 +164,7 @@ function sidebarIn4(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn5(){
@@ -174,6 +178,7 @@ function sidebarIn5(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn6(){
@@ -187,6 +192,7 @@ function sidebarIn6(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn7(){
@@ -200,6 +206,7 @@ function sidebarIn7(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn8(){
@@ -213,6 +220,7 @@ function sidebarIn8(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarIn9(){
@@ -226,6 +234,7 @@ function sidebarIn9(){
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
+	    document.getElementById("showInfoBar").style.display = "none";
 }
 
 function sidebarOut(){
@@ -236,6 +245,7 @@ function sidebarOut(){
 		setTimeout(function(){output3.innerHTML = ""},1000);
 		setTimeout(function(){output4.innerHTML = ""},1000);
 		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
+		document.getElementById("showInfoBar").style.display = "block";
 }
 
 function infoBarIn(){
@@ -249,7 +259,7 @@ function infoBarOut(){
 		$('#infoBar').animate({ marginRight:-500 }, 1000);
 		document.getElementById("showInfoBar").style.display = "block";
 		document.getElementById("hideInfoBar").style.display = "none";
-		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
+		setTimeout(function(){document.getElementById('infoBar').style.display = "none"},1000);
 }
 
 

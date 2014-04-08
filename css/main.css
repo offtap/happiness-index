@@ -7,6 +7,10 @@
     margin-top:130px;
 }
 
+#logo {
+  height: 30px;
+  margin-top: 10px;
+}
 .skillBar {
     width:0px;
     height:5%;
@@ -123,7 +127,7 @@
   position:fixed;
   right:0;
   top:0;
-  margin-right:100px;
+  margin-right:20px;
   margin-top:10px;
   cursor: pointer;
 }
@@ -133,7 +137,7 @@
   position:fixed;
   right:0;
   top:0;
-  margin-right:100px;
+  margin-right:20px;
   margin-top:10px;
   cursor: pointer;
 }
@@ -167,6 +171,8 @@
         max-height: 20%;
         height: 20%;
     }
+
+
 
 }
 
