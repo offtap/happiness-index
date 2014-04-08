@@ -238,3 +238,18 @@ function sidebarOut(){
 		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
 }
 
+function infoBarIn(){
+		document.getElementById("infoBar").style.display = "block";
+		$('#infoBar').animate({ marginRight:0 }, 1000);
+		document.getElementById("showInfoBar").style.display = "none";
+		document.getElementById("hideInfoBar").style.display = "block";
+}
+
+function infoBarOut(){
+		$('#infoBar').animate({ marginRight:-500 }, 1000);
+		document.getElementById("showInfoBar").style.display = "block";
+		document.getElementById("hideInfoBar").style.display = "none";
+		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
+}
+
+

@@ -105,48 +105,62 @@
 
 }
 
-/*.orange{background:orange;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }
-.yellow{background:yellow;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }
-.pink{background:pink;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }
-.purple{background:purple;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }
-.blue{background:blue;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }
-.green{background:green;
-    -webkit-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    box-shadow: inset -7px 7px 0px rgba(0,0,0,0.1);
-    height: 10vh;
-    width: 5%;
-    }*/
+#infoBar{
+  height:95vh;
+  background-color:black;
+  color:white;
+  position:absolute;
+  right:0;
+  top:0;
+  margin-right:-33.33333%;
+  margin-top:45px;
+  display:none;
+}
+
+#hideInfoBar {
+  display:none;
+  color:white;
+  position:fixed;
+  right:0;
+  top:0;
+  margin-right:100px;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+#showInfoBar {
+  color:white;
+  position:fixed;
+  right:0;
+  top:0;
+  margin-right:100px;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+#infoHeader{
+  color:white;
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:0px;
+}
+
+#infoSubHeader1{
+  color:white;
+  margin-left:20px;
+  margin-top:10px;
+  margin-bottom:0px;
+  float:left;
+}
+
+#infoOutput{
+  height:80vh;
+  margin-top:20px;
+  margin-left:20px;
+  width:80%;
+  clear:both;
+  float:left;
+}
 
 @media only screen and (max-device-width: 480px) {
     #intro {
