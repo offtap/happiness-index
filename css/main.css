@@ -163,14 +163,11 @@
   float:left;
 }
 
-@media only screen and (max-device-width: 480px) {
+/*@media only screen and (max-device-width: 480px) {
     #intro {
         max-height: 20%;
         height: 20%;
     }
-
-
-
-}
+}*/
 
 

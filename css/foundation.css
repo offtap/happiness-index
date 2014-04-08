@@ -316,12 +316,18 @@ select {
   #intro{
     height: 50vh;
   }
+  #map{
+    height: 50vh;
+  }
 }
 
 @media only screen {
 
   #intro{
     height:50vh;
+  }
+  #map{
+    height: 50vh;
   }
 
 
