@@ -140,6 +140,7 @@ font-size: 1rem;
   margin-right:-33.33333%;
   margin-top:45px;
   display: none;
+  z-index: 999;
 }
 
 #hideSidebar {

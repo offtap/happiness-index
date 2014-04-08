@@ -24,7 +24,7 @@
     width:0px;
     height:3.5%;
     position:absolute;
-    z-index:9999;
+    z-index:200;
     margin-top:0px;
     margin-bottom:1px;
     margin-left: 8%;
@@ -115,6 +115,7 @@
   margin-right:-33.33333%;
   margin-top:45px;
   display:none;
+  z-index: 9999;
 }
 
 #hideInfoBar {
