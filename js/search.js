@@ -10,6 +10,8 @@ var stringData2 = new Array();
 var topMargins1 = new Array();
 var topMargins2 = new Array();
 
+var natAvData = ["180","130","150","160","190","120","145","160","140","150"]
+
 var output = document.getElementById("output"); //DEBUG ONLY OUTPUT
 
 //AUTOCOMPLETE SEARCH - //search database using autocomplete
@@ -95,6 +97,7 @@ function drawData1(){
 	    $('#bar15').animate({ width: stringData1[7] }, 1000);
 	    $('#bar17').animate({ width: stringData1[8] }, 1000);
 	    $('#bar19').animate({ width: stringData1[9] }, 1000); 
+	    setTimeout(drawNatAv(),1000);
 }
 
 //draw dataset 2 (animate height then marginTop)
@@ -109,6 +112,39 @@ function drawData2(){
 	    $('#bar16').animate({ width: stringData2[7] }, 1000);
 	    $('#bar18').animate({ width: stringData2[8] }, 1000);
 	    $('#bar20').animate({ width: stringData2[9] }, 1000);  
+}
+
+function drawNatAv(){
+		$('#natAv1').animate({ width: "3" }, 0); 
+    	$('#natAv2').animate({ width: "3" }, 0);
+	    $('#natAv3').animate({ width: "3" }, 0);
+	    $('#natAv4').animate({ width: "3" }, 0);
+	    $('#natAv5').animate({ width: "3" }, 0);
+	    $('#natAv6').animate({ width: "3" }, 0);
+	    $('#natAv7').animate({ width: "3" }, 0);
+	    $('#natAv8').animate({ width: "3" }, 0);
+	    $('#natAv9').animate({ width: "3" }, 0);
+	    $('#natAv10').animate({ width: "3" }, 0); 
+
+		$('#natAv1').animate({ marginLeft: natAvData[0] }, 1000); 
+    	$('#natAv2').animate({ marginLeft: natAvData[1] }, 1000);
+	    $('#natAv3').animate({ marginLeft: natAvData[2] }, 1000);
+	    $('#natAv4').animate({ marginLeft: natAvData[3] }, 1000);
+	    $('#natAv5').animate({ marginLeft: natAvData[4] }, 1000);
+	    $('#natAv6').animate({ marginLeft: natAvData[5] }, 1000);
+	    $('#natAv7').animate({ marginLeft: natAvData[6] }, 1000);
+	    $('#natAv8').animate({ marginLeft: natAvData[7] }, 1000);
+	    $('#natAv9').animate({ marginLeft: natAvData[8] }, 1000);
+	    $('#natAv10').animate({ marginLeft: natAvData[9] }, 1000);  
+}
+
+function checkNatAvDisplay(){
+		if (natAvCheckBox.checked == 1){
+			$(".natAv").show();
+		}
+		else{
+			$(".natAv").hide();
+		}
 }
 
 function sidebarIn1(){

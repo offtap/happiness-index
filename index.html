@@ -63,44 +63,68 @@
 
             <div id="governmentArea2">
                 <form action='' method='post'>
-                    <label><span style="color:black;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA' value='' class='auto'>
+                    <label><span style="color:black;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA2' value='' class='auto'>
                     <button type="button" id="button1" onclick="submitter2()">Compare</button>
                 </form>
             </div>
 
+            <div id="natAvForm">
+                <form action='' method='post'>
+                    <label onclick="checkNatAvDisplay()"><span style="color:black;">Show National Average </span><input id ="natAvCheckBox" type='checkbox' name='natAvCheckBox' class='auto' checked></label>
+                </form>
+            </div>
+
                 <div id="skillChart">
-                    <img src="img/housing.png" id="housing"><div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
+                    <img src="img/housing.png" id="housing">
+                    <div id="natAv1" class="natAv"></div>
+                    <div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
                     <div id="bar2" class="skillBar offcol" onClick="sidebarIn1()"></div>
-                    <img src="img/money.png"><div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
+
+                    <img src="img/money.png">
+                    <div id="natAv2" class="natAv"></div>
+                    <div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
                     <div id="bar4" class="skillBar offcol" onClick="sidebarIn2()"></div>
-                    <img src="img/briefcase.png"><div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
+
+                    <img src="img/briefcase.png">
+                    <div id="natAv3" class="natAv"></div>
+                    <div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
                     <div id="bar6" class="skillBar offcol" onClick="sidebarIn3()"></div>
-                    <img src="img/community.png"><div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
+
+                    <img src="img/community.png">
+                    <div id="natAv4" class="natAv"></div>
+                    <div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
                     <div id="bar8" class="skillBar offcol" onClick="sidebarIn4()"></div>
-                    <img src="img/education.png"><div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
+
+                    <img src="img/education.png">
+                    <div id="natAv5" class="natAv"></div>
+                    <div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
                     <div id="bar10" class="skillBar offcol" onClick="sidebarIn5()"></div>
-                    <img src="img/safety.png"><div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
+
+                    <img src="img/safety.png">
+                    <div id="natAv6" class="natAv"></div>
+                    <div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
                     <div id="bar12" class="skillBar offcol" onClick="sidebarIn6()"></div>
-                    <img src="img/health.png"><div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
+
+                    <img src="img/health.png">
+                    <div id="natAv7" class="natAv"></div>
+                    <div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
                     <div id="bar14" class="skillBar offcol" onClick="sidebarIn7()"></div>
-                    <img src="img/balance.png"><div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
+
+                    <img src="img/balance.png">
+                    <div id="natAv8" class="natAv"></div>
+                    <div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
                     <div id="bar16" class="skillBar offcol" onClick="sidebarIn8()"></div>
-                    <img src="img/remoteness.png"><div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
+
+                    <img src="img/remoteness.png">
+                    <div id="natAv9" class="natAv"></div>
+                    <div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
                     <div id="bar18" class="skillBar offcol" onClick="sidebarIn9()"></div>
-                    <img src="img/overall.png"><div id="bar19" class="skillBar"></div>
+
+                    <img src="img/overall.png">
+                    <div id="natAv10" class="natAv"></div>
+                    <div id="bar19" class="skillBar"></div>
                     <div id="bar20" class="skillBar offcol"></div>
                 </div>
-
-                <!--<div id="skillLabelContainer">
-                    <div id="label1" class="skillLabel"><p id="labelPara1"></p></div>
-                    <div id="label2" class="skillLabel"><p id="labelPara2"></p></div>
-                    <div id="label3" class="skillLabel"><p id="labelPara3"></p></div>
-                    <div id="label4" class="skillLabel"><p id="labelPara4"></p></div>
-                    <div id="label5" class="skillLabel"><p id="labelPara5"></p></div>
-                    <div id="label6" class="skillLabel"><p id="labelPara6"></p></div>
-                    <div id="label7" class="skillLabel"><p id="labelPara7"></p></div>
-                    <div id="label8" class="skillLabel"><p id="labelPara8"></p></div>
-                </div>-->
 
         </div>
         <div class="large-4 columns" id="hiddenSidebar">

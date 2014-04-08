@@ -1,16 +1,37 @@
 #skillChart{
     width:80%;
     height:27em;
-    margin-left:25px;
+    margin-left:5%;
     margin-right:auto;
     text-align:left;
-    margin-top:130px;
+    margin-top:150px;
 }
 
 #logo {
   height: 30px;
   margin-top: 10px;
 }
+
+#natAvForm{
+  height:20px;
+  margin-left:5%;
+  width:80%;
+  margin-bottom:0px;
+  margin-top:0px
+}
+
+.natAv {
+    width:0px;
+    height:3.5%;
+    position:absolute;
+    z-index:9999;
+    margin-top:0px;
+    margin-bottom:1px;
+    margin-left: 8%;
+    background-color:yellow;
+    border-bottom: 3px solid #f1c40f;
+}
+
 .skillBar {
     width:0px;
     height:5%;
@@ -28,32 +49,6 @@
     border-bottom: 3px solid #888784;
     margin-top:1px;
     margin-bottom:5px;
-}
-
-#skillLabelContainer{
-    margin-top:20px;
-    width:60%;
-    height:50px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:right;
-}
-
-.skillLabel{
-    width:8.5%;
-    height:50px;
-    margin-right:2%;
-    margin-left:2%;
-    color:white;
-    float:left;
-}
-
-.skillLabel p{
-    -webkit-transform: rotate(-90deg); 
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 #legend{
