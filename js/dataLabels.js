@@ -92,7 +92,7 @@ var healthLabels = [
 "% At Risk Smoking",
 "% At Risk Drinking",
 "% At Risk Obesity",
-"Mentally distressed adults",
+"Highly stressed adults",
 "% Rated own health",
 "Index Smoking",
 "Index Alcohol",
