@@ -1,6 +1,6 @@
 #skillChart{
     width:80%;
-    height:70%;
+    height:27em;
     margin-left:25px;
     margin-right:auto;
     text-align:left;
@@ -149,13 +149,11 @@
     }*/
 
 @media only screen and (max-device-width: 480px) {
-    #map {
-        height: 20vh;
+    #intro {
+        max-height: 20%;
+        height: 20%;
     }
 
-    #intro {
-        height: 20vh;
-    }
 }
 
 

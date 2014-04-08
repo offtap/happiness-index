@@ -314,8 +314,20 @@ select {
 .columns {
   width: 100%;
   float: left; }
+  
+@media only screen (max-width: 320px) {
+  #intro{
+    height: 50vh;
+  }
+}
 
 @media only screen {
+
+  #intro{
+    height:50vh;
+  }
+
+
   .column.small-centered,
   .columns.small-centered {
     margin-left: auto;
@@ -6589,6 +6601,7 @@ th.show-for-portrait {
   th.show-for-landscape,
   th.hide-for-portrait {
     display: table-cell !important; } }
+
 @media only screen and (orientation: portrait) {
   .show-for-portrait,
   .hide-for-landscape {
