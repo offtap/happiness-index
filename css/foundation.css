@@ -312,7 +312,7 @@ select {
   width: 100%;
   float: left; }
   
-@media only screen (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   #intro{
     height: 50vh;
   }
@@ -323,12 +323,12 @@ select {
 
 @media only screen {
 
-  #intro{
+  /*#intro{
     height:50vh;
   }
   #map{
     height: 50vh;
-  }
+  }*/
 
 
   .column.small-centered,
