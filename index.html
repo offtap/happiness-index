@@ -70,7 +70,9 @@
             
             <div id="natAvForm">
                 <form action='' method='post'>
-                    <label onclick="checkNatAvDisplay()"><span style="color:black;">Show National Average </span><input id ="natAvCheckBox" type='checkbox' name='natAvCheckBox' class='auto' checked></label>
+                    <label id="checkNatAvDisplay"onclick="checkNatAvDisplay()"><span style="color:black;">Show National Average </span><input id ="natAvCheckBox" type='checkbox' name='natAvCheckBox' class='auto' checked></label>
+                    <!-- CHECKBOX FOR VALUES
+                    <label id="checkNumBarDisplay" onclick="checkBarNumDisplay()"><span style="color:black;">Show Values </span><input id ="barNumCheckBox" type='checkbox' name='barNumCheckBox' class='auto' checked></label>-->
                 </form>
             </div>
 
@@ -78,42 +80,61 @@
                     <span data-tooltip class="has-tip" title="Housing Affordability"><img src="img/housing.png" id="housing"></span>
                     <div id="natAv1" class="natAv"></div>
                     <div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
+                    <p id="barNum1" class="barNum"></p>
                     <div id="bar2" class="skillBar offcol" onClick="sidebarIn1()"></div>
+
                     <span data-tooltip class="has-tip" title="Wealth"><img src="img/money.png"></span>
                     <div id="natAv2" class="natAv"></div>
                     <div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
+                    <p id="barNum2" class="barNum"></p>
                     <div id="bar4" class="skillBar offcol" onClick="sidebarIn2()"></div>
+
                     <span data-tooltip class="has-tip" title="Jobs"><img src="img/briefcase.png"></span>
                     <div id="natAv3" class="natAv"></div>
                     <div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
+                    <p id="barNum3" class="barNum"></p>
                     <div id="bar6" class="skillBar offcol" onClick="sidebarIn3()"></div>
+
                     <span data-tooltip class="has-tip" title="Community"><img src="img/community.png"></span>
                     <div id="natAv4" class="natAv"></div>
                     <div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
+                    <p id="barNum4" class="barNum"></p>
                     <div id="bar8" class="skillBar offcol" onClick="sidebarIn4()"></div>
+
                     <span data-tooltip class="has-tip" title="Education"><img src="img/education.png"></span>
                     <div id="natAv5" class="natAv"></div>
                     <div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
+                    <p id="barNum5" class="barNum"></p>
                     <div id="bar10" class="skillBar offcol" onClick="sidebarIn5()"></div>
+
                     <span data-tooltip class="has-tip" title="Safety"><img src="img/safety.png"></span>
                     <div id="natAv6" class="natAv"></div>
                     <div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
+                    <p id="barNum6" class="barNum"></p>
                     <div id="bar12" class="skillBar offcol" onClick="sidebarIn6()"></div>
+
                     <span data-tooltip class="has-tip" title="Health"><img src="img/health.png"></span>
                     <div id="natAv7" class="natAv"></div>
                     <div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
+                    <p id="barNum7" class="barNum"></p>
                     <div id="bar14" class="skillBar offcol" onClick="sidebarIn7()"></div>
+
                     <span data-tooltip class="has-tip" title="Work/Life/Balance"><img src="img/balance.png"></span>
                     <div id="natAv8" class="natAv"></div>
                     <div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
+                    <p id="barNum8" class="barNum"></p>
                     <div id="bar16" class="skillBar offcol" onClick="sidebarIn8()"></div>
+
                     <span data-tooltip class="has-tip" title="Remoteness"><img src="img/remoteness.png"></span>
                     <div id="natAv9" class="natAv"></div>
                     <div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
+                    <p id="barNum9" class="barNum"></p>
                     <div id="bar18" class="skillBar offcol" onClick="sidebarIn9()"></div>
+
                     <span data-tooltip class="has-tip" title="Overall Happiness"><img src="img/overall.png">
                     <div id="natAv10" class="natAv"></div>
                     <div id="bar19" class="skillBar"></div>
+                    <p id="barNum10" class="barNum"></p>
                     <div id="bar20" class="skillBar offcol"></div>
                 </div>
 

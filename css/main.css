@@ -15,9 +15,14 @@
 #natAvForm{
   height:20px;
   margin-left:5%;
-  width:80%;
+  width:90%;
   margin-bottom:0px;
   margin-top:0px
+}
+
+#checkNumBarDisplay{
+  width:50px;
+  float:left;
 }
 
 .natAv {
@@ -30,6 +35,24 @@
     margin-left: 8%;
     background-color:yellow;
     border-bottom: 3px solid #f1c40f;
+}
+
+/*VALUE CHECKBOX STYLING
+#checkNumBarDisplay{
+  width:40%;
+  float:right;
+}*/
+
+.barNum {
+    font-size:0.8em; 
+    position:absolute;
+    height:5%;
+    position:absolute;
+    margin-top:-23px;
+    color:white;
+    margin-bottom:1px;
+    margin-left: 35px;
+    width:40px;
 }
 
 .skillBar {
@@ -84,8 +107,6 @@
 
 #legend{
     
-
-
     }
 
 #legendMinus{
@@ -162,6 +183,7 @@
   clear:both;
   float:left;
 }
+
 
 /*@media only screen and (max-device-width: 480px) {
     #intro {

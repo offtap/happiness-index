@@ -98,6 +98,21 @@ function drawData1(){
 	    $('#bar17').animate({ width: stringData1[8] }, 1000);
 	    $('#bar19').animate({ width: stringData1[9] }, 1000); 
 	    setTimeout(drawNatAv(),1000);
+	    setTimeout(addBarNums(),1000);
+
+}
+
+function addBarNums(){
+		barNum1.innerHTML = parseFloat(serverResponse[0][4]).toFixed(2);
+		barNum2.innerHTML = parseFloat(serverResponse[0][5]).toFixed(2);
+		barNum3.innerHTML = parseFloat(serverResponse[0][6]).toFixed(2);
+		barNum4.innerHTML = parseFloat(serverResponse[0][7]).toFixed(2);
+		barNum5.innerHTML = parseFloat(serverResponse[0][8]).toFixed(2);
+		barNum6.innerHTML = parseFloat(serverResponse[0][9]).toFixed(2);
+		barNum7.innerHTML = parseFloat(serverResponse[0][10]).toFixed(2);
+		barNum8.innerHTML = parseFloat(serverResponse[0][11]).toFixed(2);
+		barNum9.innerHTML = parseFloat(serverResponse[0][12]).toFixed(2);
+		barNum10.innerHTML = parseFloat(serverResponse[0][13]).toFixed(2);
 }
 
 //draw dataset 2 (animate height then marginTop)
@@ -147,6 +162,14 @@ function checkNatAvDisplay(){
 		}
 }
 
+/*function checkBarNumDisplay(){
+		if (barNumCheckBox.checked == 1){
+			$(".barNum").show();
+		}
+		else{
+			$(".barNum").hide();
+		}
+}*/
 
 function sidebarIn1(){
 		document.getElementById('hiddenSidebar').style.display = "block";
