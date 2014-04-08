@@ -67,7 +67,7 @@
                     <button type="button" id="button1" onclick="submitter2()">Compare</button>
                 </form>
             </div>
-
+            
             <div id="natAvForm">
                 <form action='' method='post'>
                     <label onclick="checkNatAvDisplay()"><span style="color:black;">Show National Average </span><input id ="natAvCheckBox" type='checkbox' name='natAvCheckBox' class='auto' checked></label>
@@ -79,47 +79,38 @@
                     <div id="natAv1" class="natAv"></div>
                     <div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
                     <div id="bar2" class="skillBar offcol" onClick="sidebarIn1()"></div>
-
                     <img src="img/money.png">
                     <div id="natAv2" class="natAv"></div>
                     <div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
                     <div id="bar4" class="skillBar offcol" onClick="sidebarIn2()"></div>
-
                     <img src="img/briefcase.png">
                     <div id="natAv3" class="natAv"></div>
                     <div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
                     <div id="bar6" class="skillBar offcol" onClick="sidebarIn3()"></div>
-
                     <img src="img/community.png">
                     <div id="natAv4" class="natAv"></div>
                     <div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
                     <div id="bar8" class="skillBar offcol" onClick="sidebarIn4()"></div>
-
                     <img src="img/education.png">
                     <div id="natAv5" class="natAv"></div>
                     <div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
                     <div id="bar10" class="skillBar offcol" onClick="sidebarIn5()"></div>
-
                     <img src="img/safety.png">
                     <div id="natAv6" class="natAv"></div>
                     <div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
                     <div id="bar12" class="skillBar offcol" onClick="sidebarIn6()"></div>
-
                     <img src="img/health.png">
                     <div id="natAv7" class="natAv"></div>
                     <div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
                     <div id="bar14" class="skillBar offcol" onClick="sidebarIn7()"></div>
-
                     <img src="img/balance.png">
                     <div id="natAv8" class="natAv"></div>
                     <div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
                     <div id="bar16" class="skillBar offcol" onClick="sidebarIn8()"></div>
-
                     <img src="img/remoteness.png">
                     <div id="natAv9" class="natAv"></div>
                     <div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
                     <div id="bar18" class="skillBar offcol" onClick="sidebarIn9()"></div>
-
                     <img src="img/overall.png">
                     <div id="natAv10" class="natAv"></div>
                     <div id="bar19" class="skillBar"></div>
@@ -138,33 +129,32 @@
         </div>
         <div class="large-4 columns" id="infoBar">
                 <h4 id="infoHeader">About the Happiness Index</h4>
-                <h5 id="infoSubHeader1">Made by some kids at Bond</h5>
-                <p id="infoOutput">Seriously. We have no idea what we're doing.</p>
+                <p id="infoOutput">We built this site to provide useful and elegant information, available for public use. The data is census data provided from the Australian Bureau of statistics.<br><br>
+                <span class="label">Made by some kids at Bond</span></p>
         </div>
 
       <!-- Tip Content -->
         <ol id="joyRideTipContent">
             <li data-class="so-awesome" data-text="Next" class="custom">
                 <h2>Hello</h2>
-                <p>Welcome to the Happiness Index, search and compare where the happiest in australia is, based on what means the most to you.</p>
+                <p>Welcome to the Happiness Index, search and compare where the happiest location in Australia is based on what means the most to you.</p>
             </li>
             <li data-id="governmentArea1" data-button="Next" data-options="tipLocation:right">
                 <h2>Search</h2>
-                <p>Type in a location, then press submit! A graph will display below.</p>
+                <p>Type in a location, then press submit! A bar graph will display below.</p>
             </li>
             <li data-id="governmentArea2" data-button="Next" data-options="tipLocation:right">
                 <h2>Compare</h2>
                 <p>Compare against another location.</p>
             </li>
             <li data-id="skillChart" data-button="Next" data-options="tipLocation:right">
-                <h2>Test</h2>
-                <p>Browse the map by suburbs!</p>
+                <h2>Click on the Icons</h2>
+                <p>Once you submit and compare, you can click on the icon the bar graph to find out more data.</p>
             </li>
-            <li data-button="map">
+            <li data-button="Next">
                 <h2>Map</h2>
-                <p>Browse the map by suburbs!</p>
+                <p>Browse the map using the legend below to compare locations. how does your area compare to others!</p>
             </li>
-
         </ol>
 
         <script>
@@ -183,14 +173,14 @@
         <script src="js/foundation/foundation.joyride.js"></script>
         <script src="js/vendor/jquery.cookie.js"></script>
         <script type="text/javascript" src="js/jquery.joyride-2.1.js"></script>
-        <!-- runs the joyride only once 
+        <!-- runs the joyride only once -->
         <script type="text/javascript">
                 $("#joyRideTipContent").joyride({
             cookieMonster: true,
             cookieName: 'JoyRide',
             cookieDomain: false
         });
-        </script> -->
+        </script> 
         
         <!-- runs joyride -->
         <script>

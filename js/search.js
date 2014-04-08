@@ -10,7 +10,7 @@ var stringData2 = new Array();
 var topMargins1 = new Array();
 var topMargins2 = new Array();
 
-var natAvData = ["180","130","150","160","190","120","145","160","140","150"]
+var natAvData = ["200","166","169","168","189","192","168","165","173","176"]
 
 var output = document.getElementById("output"); //DEBUG ONLY OUTPUT
 
@@ -146,6 +146,7 @@ function checkNatAvDisplay(){
 			$(".natAv").hide();
 		}
 }
+
 
 function sidebarIn1(){
 		document.getElementById('hiddenSidebar').style.display = "block";

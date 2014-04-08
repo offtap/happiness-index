@@ -51,6 +51,7 @@
     margin-bottom:5px;
 }
 
+
 #legend{
     width: 20%;
     height: 1%; 
@@ -106,7 +107,7 @@
 
 #infoBar{
   height:95vh;
-  background-color:black;
+  background: rgba(28, 24, 33, 0.96);
   color:white;
   position:absolute;
   right:0;
