@@ -10,7 +10,7 @@
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
+        <!--<link type="text/css" rel="stylesheet" media="and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2)" href="css/ipad.css" />-->
         <!--MAP LINKS-->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
@@ -75,55 +75,55 @@
             </div>
 
                 <div id="skillChart">
-                    <span data-tooltip class="has-tip" title="Housing Affordability"><img src="img/housing.png" id="housing"></span>
+                    <span data-tooltip class="has-tip" title="Housing Affordability"><img src="img/housing.png" id="housing" onClick="sidebarIn1()"></span>
                     <div id="natAv1" class="natAv"></div>
                     <div id="bar1" class="skillBar" onClick="sidebarIn1()"></div>
                     <p id="barNum1" class="barNum" onClick="sidebarIn1()"></p>
                     <div id="bar2" class="skillBar offcol" onClick="sidebarIn1()"></div>
 
-                    <span data-tooltip class="has-tip" title="Wealth"><img src="img/money.png"></span>
+                    <span data-tooltip class="has-tip" title="Wealth"><img src="img/money.png" onClick="sidebarIn2()"></span>
                     <div id="natAv2" class="natAv"></div>
                     <div id="bar3" class="skillBar" onClick="sidebarIn2()"></div>
                     <p id="barNum2" class="barNum" onClick="sidebarIn2()"></p>
                     <div id="bar4" class="skillBar offcol" onClick="sidebarIn2()"></div>
 
-                    <span data-tooltip class="has-tip" title="Jobs"><img src="img/briefcase.png"></span>
+                    <span data-tooltip class="has-tip" title="Jobs"><img src="img/briefcase.png" onClick="sidebarIn3()"></span>
                     <div id="natAv3" class="natAv"></div>
                     <div id="bar5" class="skillBar" onClick="sidebarIn3()"></div>
                     <p id="barNum3" class="barNum" onClick="sidebarIn3()"></p>
                     <div id="bar6" class="skillBar offcol" onClick="sidebarIn3()"></div>
 
-                    <span data-tooltip class="has-tip" title="Community"><img src="img/community.png"></span>
+                    <span data-tooltip class="has-tip" title="Community"><img src="img/community.png" onClick="sidebarIn4()"></span>
                     <div id="natAv4" class="natAv"></div>
                     <div id="bar7" class="skillBar" onClick="sidebarIn4()"></div>
                     <p id="barNum4" class="barNum" onClick="sidebarIn4()"></p>
                     <div id="bar8" class="skillBar offcol" onClick="sidebarIn4()"></div>
 
-                    <span data-tooltip class="has-tip" title="Education"><img src="img/education.png"></span>
+                    <span data-tooltip class="has-tip" title="Education"><img src="img/education.png" onClick="sidebarIn5()"></span>
                     <div id="natAv5" class="natAv"></div>
                     <div id="bar9" class="skillBar" onClick="sidebarIn5()"></div>
                     <p id="barNum5" class="barNum" onClick="sidebarIn5()"></p>
                     <div id="bar10" class="skillBar offcol" onClick="sidebarIn5()"></div>
 
-                    <span data-tooltip class="has-tip" title="Safety"><img src="img/safety.png"></span>
+                    <span data-tooltip class="has-tip" title="Safety"><img src="img/safety.png" onClick="sidebarIn6()"></span>
                     <div id="natAv6" class="natAv"></div>
                     <div id="bar11" class="skillBar" onClick="sidebarIn6()"></div>
                     <p id="barNum6" class="barNum" onClick="sidebarIn6()"></p>
                     <div id="bar12" class="skillBar offcol" onClick="sidebarIn6()"></div>
 
-                    <span data-tooltip class="has-tip" title="Health"><img src="img/health.png"></span>
+                    <span data-tooltip class="has-tip" title="Health"><img src="img/health.png" onClick="sidebarIn7()"></span>
                     <div id="natAv7" class="natAv"></div>
                     <div id="bar13" class="skillBar" onClick="sidebarIn7()"></div>
                     <p id="barNum7" class="barNum" onClick="sidebarIn7()"></p>
                     <div id="bar14" class="skillBar offcol" onClick="sidebarIn7()"></div>
 
-                    <span data-tooltip class="has-tip" title="Work/Life/Balance"><img src="img/balance.png"></span>
+                    <span data-tooltip class="has-tip" title="Work/Life/Balance"><img src="img/balance.png" onClick="sidebarIn8()"></span>
                     <div id="natAv8" class="natAv"></div>
                     <div id="bar15" class="skillBar" onClick="sidebarIn8()"></div>
                     <p id="barNum8" class="barNum" onClick="sidebarIn8()"></p>
                     <div id="bar16" class="skillBar offcol" onClick="sidebarIn8()"></div>
 
-                    <span data-tooltip class="has-tip" title="Remoteness"><img src="img/remoteness.png"></span>
+                    <span data-tooltip class="has-tip" title="Remoteness"><img src="img/remoteness.png" onClick="sidebarIn9()"></span>
                     <div id="natAv9" class="natAv"></div>
                     <div id="bar17" class="skillBar" onClick="sidebarIn9()"></div>
                     <p id="barNum9" class="barNum" onClick="sidebarIn9()"></p>
@@ -132,7 +132,7 @@
                     <span data-tooltip class="has-tip" title="Overall Happiness"><img src="img/overall.png">
                     <div id="natAv10" class="natAv"></div>
                     <div id="bar19" class="skillBar"></div>
-                    <p id="barNum10" class="barNum" onClick="sidebarIn10()"></p>
+                    <p id="barNum10" class="barNum"</p>
                     <div id="bar20" class="skillBar offcol"></div>
                 </div>
 
@@ -151,30 +151,30 @@
         <div class="large-4 columns" id="infoBar">
                 <h4 id="infoHeader">About the Happiness Index</h4>
                 <p id="infoOutput">We built this site to provide useful and elegant information, available for public use. The data is census data provided from the Australian Bureau of statistics.<br><br>
-                <span class="label">Made by some kids at Bond</span></p>
+                <span style="font-size:1.2em;" class="label">Made by some kids at Bond</span></p>
         </div>
 
       <!-- Tip Content -->
         <ol id="joyRideTipContent">
             <li data-class="so-awesome" data-text="Next" class="custom">
                 <h2>Hello</h2>
-                <p>Welcome to the Happiness Index, search and compare where the happiest location in Australia is based on what means the most to you.</p>
+                <p>Welcome to the 2014 Australian Happiness Index! Search and compare locations around Australia based on census data and find out more about the places that mean the most to you.</p>
             </li>
             <li data-id="governmentArea1" data-button="Next" data-options="tipLocation:right">
                 <h2>Search</h2>
-                <p>Type in a location, then press submit! A bar graph will display below.</p>
+                <p>Type in a local government area, then press submit! A bar graph will display data for your chosen location below.</p>
             </li>
             <li data-id="governmentArea2" data-button="Next" data-options="tipLocation:right">
                 <h2>Compare</h2>
-                <p>Compare against another location.</p>
+                <p>Enter another local government area to compare against.</p>
             </li>
             <li data-id="skillChart" data-button="Next" data-options="tipLocation:right">
-                <h2>Click on the Icons</h2>
-                <p>Once you submit and compare, you can click on the icon the bar graph to find out more data.</p>
+                <h2>Find out more!</h2>
+                <p>Once you submit and compare, you can click on the different sections of the bar graph to find out more data about your chosen locations.</p>
             </li>
             <li data-button="Next">
                 <h2>Map</h2>
-                <p>Browse the map using the legend below to compare locations. how does your area compare to others!</p>
+                <p>Browse the map using the legend below to compare locations. How does your area match up?</p>
             </li>
         </ol>
 

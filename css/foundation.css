@@ -34,13 +34,11 @@ html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html,
-body {
-  font-size: 100%;
-   }
 
 body {
+  font-size: 100%;
   background: white;
+  background-color: #fafafa;
   color: #222222;
   padding-left: 0;
   margin: 0;
@@ -64,8 +62,8 @@ width: 100vw;
 
 }
 #map {
-  width: 100;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 #footer {
   position:fixed;
@@ -351,6 +349,62 @@ select {
   }
 }
 
+@media only screen and (min-width: 468px) and (max-width: 1024px)  {
+  body {
+    overflow: hidden;
+    }
+  
+  #map{
+  height: 630px; 
+  }
+
+  #legend {
+    display: none;
+  }
+
+  #intro {
+    width: 65%;
+  }
+  #sidebar {
+    width: 35%;
+  }
+    #skillChart {
+  width: 80%;
+  height: 300px;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 1024px) and (orientation: portrait)  {
+  
+  body {
+    overflow: hidden;
+  }
+
+  .natAv {
+    height: 1.7em;
+  }
+
+  #map{
+    height: 900px;
+  }
+
+  #legend {
+    display: none;
+  }
+    #skillChart {
+  width: 80%;
+  height: 570px;
+  }
+
+  #intro {
+    width: 50%;
+  }
+  #sidebar {
+    width: 50%;
+  }
+
+
+}
 @media only screen {
 
 
@@ -927,7 +981,11 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
+
+
 @media only screen and (min-width: 64.063em) {
+
+
   .column.large-centered,
   .columns.large-centered {
     margin-left: auto;
