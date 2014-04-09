@@ -10,7 +10,7 @@ var stringData2 = new Array();
 var topMargins1 = new Array();
 var topMargins2 = new Array();
 
-var natAvData = ["200","166","169","168","189","192","168","165","173","176"]
+var natAvData = ["180","149","152","151","170","173","151","148","156","159"]
 
 var output = document.getElementById("output"); //DEBUG ONLY OUTPUT
 
@@ -51,7 +51,7 @@ function submitter2(){
 
 function dataToStrings(){
 	for(var n=4;n<14;n++){
-		serverResponseTransformed[n-4] = serverResponse[0][n] * 30;
+		serverResponseTransformed[n-4] = serverResponse[0][n] * 27;
 	}
 	roundNumbers();
 	for(var i=0;i<10;i++){
@@ -63,7 +63,7 @@ function dataToStrings(){
 
 function dataToStrings2(){
 	for(var n=4;n<14;n++){
-		serverResponseTransformed2[n-4] = serverResponse2[0][n] * 30;
+		serverResponseTransformed2[n-4] = serverResponse2[0][n] * 27;
 	}
 	roundNumbers2();
 	for(var i=0;i<10;i++){
@@ -99,7 +99,6 @@ function drawData1(){
 	    $('#bar19').animate({ width: stringData1[9] }, 1000); 
 	    setTimeout(drawNatAv(),1000);
 	    setTimeout(addBarNums(),1000);
-
 }
 
 function addBarNums(){
@@ -161,15 +160,6 @@ function checkNatAvDisplay(){
 			$(".natAv").hide();
 		}
 }
-
-/*function checkBarNumDisplay(){
-		if (barNumCheckBox.checked == 1){
-			$(".barNum").show();
-		}
-		else{
-			$(".barNum").hide();
-		}
-}*/
 
 function sidebarIn1(){
 		document.getElementById('hiddenSidebar').style.display = "block";

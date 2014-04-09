@@ -3,7 +3,7 @@ body {
 }
 #skillChart{
     width:80%;
-    height:27em;
+    height:25em;
     margin-left:5%;
     margin-right:auto;
     text-align:left;
@@ -30,7 +30,7 @@ body {
 
 .natAv {
     width:0px;
-    height:1.34em;
+    height:1.25em;
     position:absolute;
     z-index:200;
     margin-top:0px;
