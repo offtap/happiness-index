@@ -60,7 +60,7 @@ width: 100vw;
 
 #sidebar {
   background-color: #fafafa;
-  height:100vh;
+  height:100%;
 
 }
 #map {
@@ -309,6 +309,24 @@ select {
   #map{
     height: 150px;
     width:100%;
+  }
+
+  #sidebar {
+  background-color: #fafafa;
+  height:600px;
+}
+
+  #skillChart {
+  width: 80%;
+  height: 250px;
+  margin-left: 5%;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 150px;
+  }
+
+  #legend {
+    display: none;
   }
 }
 
