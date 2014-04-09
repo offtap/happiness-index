@@ -177,8 +177,9 @@ function sidebarIn1(){
 	    for(var i=16; i<33; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + housingLabels[i-16]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -191,8 +192,9 @@ function sidebarIn2(){
 	    for(var i=119; i<123; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + wealthLabels[i-119]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -205,8 +207,9 @@ function sidebarIn3(){
 	    for(var i=94; i<105; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + jobsLabels[i-94]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -219,8 +222,9 @@ function sidebarIn4(){
 	    for(var i=35; i<51; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + communityLabels[i-35]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -233,8 +237,9 @@ function sidebarIn5(){
 	    for(var i=73; i<92; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + educationLabels[i-73]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -247,8 +252,9 @@ function sidebarIn6(){
 	    for(var i=53; i<58; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + safetyLabels[i-53]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -261,8 +267,9 @@ function sidebarIn7(){
 	    for(var i=60; i<71; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + healthLabels[i-60]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -272,11 +279,12 @@ function sidebarIn7(){
 function sidebarIn8(){
 		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Work-life Balance" +"<BR>";
-	    for(var i=125; i<147; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+	    for(var i=125; i<144; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + wlBalanceLabels[i-125]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -289,8 +297,9 @@ function sidebarIn9(){
 	    for(var i=107; i<117; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			output.innerHTML += " " + remotenessLabels[i-107]+"<BR>";
 			output2.innerHTML += " " +serverResponse[0][i]+"<BR>"; //note you must use serverResponse[0] as your base and then numbers [0]-[146]
-			output3.innerHTML += "vs." + "<BR>";
-			output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			if(serverResponse2!==undefined){
+				output4.innerHTML += serverResponse2[0][i]+"<BR>";
+			}
 		}
 	    $('#hiddenSidebar').animate({ marginRight:0 }, 1000);
 	    document.getElementById("hideSidebar").style.display = "block";
@@ -302,7 +311,6 @@ function sidebarOut(){
 		document.getElementById("hideSidebar").style.display = "none";
 		setTimeout(function(){output.innerHTML = ""},1000);
 		setTimeout(function(){output2.innerHTML = ""},1000);
-		setTimeout(function(){output3.innerHTML = ""},1000);
 		setTimeout(function(){output4.innerHTML = ""},1000);
 		setTimeout(function(){document.getElementById('hiddenSidebar').style.display = "none"},1000);
 		document.getElementById("showInfoBar").style.display = "block";

@@ -14,8 +14,6 @@ var housingLabels = [
 "No of Dwellings",
 "% Mortgage Stress",
 "% Rent Stress",
-"% Rent Stress",
-"% Rent Stress",
 "Household Income (W)",
 "Household Income (M)"
 ]
@@ -45,6 +43,7 @@ var communityLabels = [
 "% Volunteers",
 "% Externally Supported",
 "Index Volunteers",
+"Index Supported",
 "Married",
 "Separated",
 "Divorced",
@@ -54,6 +53,7 @@ var communityLabels = [
 "% Married",
 "% Separated",
 "% Divorced",
+"% Divorced/Separated",
 "% Widowed",
 "% Never Married"
 ]
@@ -85,7 +85,7 @@ var safetyLabels = [
 "Homicide Rate/100k",
 "Index Assault",
 "Index Homicide",
-"% Feel safe WAAD"
+"% Feel safe walking alone after dark"
 ]
 
 var healthLabels = [
@@ -117,13 +117,13 @@ var wlBalanceLabels = [
 "Work 41-48 hours",
 "Work 49+ hours",
 "Hours worked NS",
-"Unpaid Domestic Work 0-4hrs",
-"Unpaid Domestic Work 5-14hrs",
-"Unpaid Domestic Work 15-29hrs",
-"Unpaid Domestic Work 30+hrs",
-"Unpaid Domestic Work none",
-"Unpaid Domestic Work NS",
-"% 30+hrs unpaid Dom. Work",
+"Unpaid Domestic 0-4hrs",
+"Unpaid Domestic 5-14hrs",
+"Unpaid Domestic 15-29hrs",
+"Unpaid Domestic 30+hrs",
+"Unpaid Domestic none",
+"Unpaid Domestic NS",
+"% 30+hrs unpaid Dom.",
 "Av. Hours paid/unpaid"
 ]
 

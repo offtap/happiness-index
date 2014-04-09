@@ -27,14 +27,14 @@
 
 .natAv {
     width:0px;
-    height:3.5%;
+    height:1.34em;
     position:absolute;
     z-index:200;
     margin-top:0px;
     margin-bottom:1px;
     margin-left: 8%;
-    background-color:yellow;
-    border-bottom: 3px solid #f1c40f;
+    background-color:#f39c12;
+    border-bottom: 3px solid #e67e22;
 }
 
 /*VALUE CHECKBOX STYLING
@@ -53,6 +53,7 @@
     margin-bottom:1px;
     margin-left: 35px;
     width:40px;
+    cursor:pointer;
 }
 
 .skillBar {
@@ -64,6 +65,10 @@
     background-color:#25ce98;
     border-bottom: 3px solid #2aaf84;
     cursor:pointer;
+}
+
+.skillBar:hover {
+    opacity:0.8;
 }
 
 .offcol{
@@ -112,7 +117,7 @@
 #legendMinus{
     float:left;
     margin-left:-8%;
-    color:white;
+    color:black;
     font-size: 1.5em;
     margin-top:-4%;
 }
@@ -121,7 +126,7 @@
     float:right;
     margin-top:-4%;
     margin-right:-10%;
-    color:white;
+    color:black;
     font-size: 1.5em;
 
 }
