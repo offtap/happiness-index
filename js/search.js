@@ -20,6 +20,18 @@ $(function() { $("#search").autocomplete({source: "search.php",minLength: 1});})
 $(function() { $("#search2").autocomplete({source: "search.php",minLength: 1});}); 
 
 //SUBMITTER - call PHP with LGA search string from AUTOCOMPLETE
+
+//CALL SUBMISSION AND RETURN FALSE TO STOP PAGE REFRESH
+$('#LGAForm1').submit(function () {
+ 	submitter();
+ 	return false;
+});
+
+$('#LGAForm2').submit(function () {
+ 	submitter2();
+ 	return false;
+});
+
 function submitter(){
 	findLocation();
 	output.innerHTML = ""; //clear output

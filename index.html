@@ -58,15 +58,17 @@
 
         <div class="medium-4 columns" id="sidebar">
             <div id="governmentArea1">
-                    <form action='' method='post'>
+                    <form action='' method='post' id="LGAForm1">
                             <label><span style="color:black;">Local Government Area:</span></label><input id = "search" type='text' name='LGA' value='' class='auto' placeholder="Eg. Melbourne">
+                            <input type="submit" style="display:none;"/>
                             <button type="button" id="button" onclick="submitter()">Submit</button>
                     </form>
             </div>
 
             <div id="governmentArea2">
-                <form action='' method='post'>
+                <form action='' method='post' id="LGAForm2">
                     <label><span style="color:black;">Local Government Area:</span></label><input id = "search2" type='text' name='LGA2' value='' class='auto' placeholder="Eg. Gold Coast">
+                    <input type="submit" style="display:none;"/>
                     <button type="button" id="button1" onclick="submitter2()">Compare</button>
                 </form>
             </div>
