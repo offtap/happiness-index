@@ -1,39 +1,36 @@
 var housingLabels = [
-"Mortgage Payment (M)",
-"Weekly Rent (Median)",
-"Stressed households",
-"Financial Stress",
-"Weekly mortgage",
-"Weekyl Rent (Index) ",
+"Monthly mortgage payment (Median)",
+"Weekly rent (Median)",
+"Low income houses under financial stress from mortgage or rent",
+//"Financial Stress",
+//"Weekly mortgage",
+//"Weekyl Rent (Index) ",
 "Persons per bedroom",
-"Household size",
+"Household size (Avg)",
 "% Owned Homes",
 "% Mortgaged Homes",
-"% Renting",
+"% Rented Homes",
 "% Other",
-"No of Dwellings",
-"% Mortgage Stress",
-"% Rent Stress",
-"Household Income (W)",
-"Household Income (M)"
+"Total Dwellings",
+//"% Mortgage Stress",
+//"% Rent Stress",
+"Household Income (W, Median)",
+//"Household Income (M)"
 ]
 
 var wealthLabels = [
-"SEIFA SE Index",
-"AUS HHWealth Index",
-"SEIFA Index",
-"HHWealth Index"
+"Scores in the category of Wealth are based on the SEIFA Index of relative socio-economic disadvantage and the SEIFA Index of economic resources."
 ]
 
 var jobsLabels = [
 "% Unemployment",
-"Personal Income (W)",
-"Household Income (W)",
-"Pers. Income Index",
-"HHld. Income Index",
-"Unemployment Index",
-"Employed FT",
-"Employed PT",
+"Personal Income (W, Median)",
+"Household Income (W, Median)",
+//"Pers. Income Index",
+//"HHld. Income Index",
+//"Unemployment Index",
+"Employed full-time",
+"Employed part-time",
 "Employed Away",
 "Unemployed searching",
 "Total Labour Force"
@@ -42,14 +39,14 @@ var jobsLabels = [
 var communityLabels = [
 "% Volunteers",
 "% Externally Supported",
-"Index Volunteers",
-"Index Supported",
-"Married",
-"Separated",
-"Divorced",
-"Widowed",
-"Never Married",
-"Population",
+//"Index Volunteers",
+//"Index Supported",
+//"Married",
+//"Separated",
+//"Divorced",
+//"Widowed",
+//"Never Married",
+//"Population",
 "% Married",
 "% Separated",
 "% Divorced",
@@ -59,23 +56,23 @@ var communityLabels = [
 ]
 
 var educationLabels = [
-"workers at 16",
-"Av. Yrs in education",
+"% of 16yr olds in school",
+"Years in education (Avg)",
 "% No schooling",
-"Index No schooling",
-"Index Av. Education",
-"Index 16yo workers",
-"Total Yr 12",
-"Total Yr 11",
-"Total Yr 10",
-"Total Yr 9",
-"Total Yr 8",
+//"Index No schooling",
+//"Index Av. Education",
+//"Index 16yo workers",
+"Finished Yr 12",
+"Finished Yr 11",
+"Finished Yr 10",
+"Finished Yr 9",
+"Finished Yr 8",
 "Total No Schooling",
 "Graduate Degrees",
 "Grad Dip./Grad. Cert",
 "Bach. Degree",
 "AdvDip/DipTotal",
-"Cert. Lvl NFD",
+//"Cert. Lvl NFD",
 "Cert. 3/4",
 "Cert. 1/2"
 ]
@@ -83,8 +80,8 @@ var educationLabels = [
 var safetyLabels = [
 "Assault Rate/100k",
 "Homicide Rate/100k",
-"Index Assault",
-"Index Homicide",
+//"Index Assault",
+//"Index Homicide",
 "% Feel safe walking alone after dark"
 ]
 
@@ -92,21 +89,21 @@ var healthLabels = [
 "% At Risk Smoking",
 "% At Risk Drinking",
 "% At Risk Obesity",
-"Highly stressed adults",
-"% Rated own health",
-"Index Smoking",
-"Index Alcohol",
-"Index Obesity",
-"Index Risks",
-"Index Mental Health",
-"Index Self Assessment"
+"% Mental health risk",
+"% Rate own health as good",
+//"Index Smoking",
+//"Index Alcohol",
+//"Index Obesity",
+//"Index Risks",
+//"Index Mental Health",
+//"Index Self Assessment"
 ]
 
 var wlBalanceLabels = [
 "% Work 49+ Hours",
-"% Non-work Time",
-"% Index 49+ Hours",
-"% Index Leisure",
+"% of time for family, self-care and leisure",
+//"% Index 49+ Hours",
+//"% Index Leisure",
 "Av. Work hours (W)",
 "Work 0 hours",
 "Work 1-15 hours",
@@ -116,7 +113,7 @@ var wlBalanceLabels = [
 "Work 40 hours",
 "Work 41-48 hours",
 "Work 49+ hours",
-"Hours worked NS",
+//"Hours worked NS",
 "Unpaid Domestic 0-4hrs",
 "Unpaid Domestic 5-14hrs",
 "Unpaid Domestic 15-29hrs",
@@ -129,7 +126,7 @@ var wlBalanceLabels = [
 
 var remotenessLabels = [
 "% Houses w/out Internet",
-"Remoteness Code",
+/*"Remoteness Code",
 "Index No Internet",
 "Av. Cars per Home",
 "% No/Difficult Transport",
@@ -137,6 +134,6 @@ var remotenessLabels = [
 "HH BrdB Internet",
 "HH Dial up Internet",
 "HH Other Internet",
-"HH Internet Not Stated"
+"HH Internet Not Stated"*/
 ]
 
