@@ -302,7 +302,7 @@ function sidebarIn7(){
 function sidebarIn8(){
 		document.getElementById('hiddenSidebar').style.display = "block";
 		outputHeader.innerHTML = "Work-life Balance" +"<BR>";
-	    for(var i=125; i<144; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
+	    for(var i=125; i<147; i++){ //for each column in the serverResponse array - note it doesnt work with the .length value of the array
 			if(i-125 < wlBalanceLabels.length){
 				output.innerHTML += " " + wlBalanceLabels[i-125]+"<BR>";
 			}
